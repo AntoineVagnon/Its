@@ -1,0 +1,215 @@
+{
+  "Header": {
+    "logo": "iT SYSTEMS",
+    "nav": {
+      "home": "Home",
+      "products": "Products",
+      "services": "Services",
+      "about": "About",
+      "contact": "Contact"
+    },
+    "cta": "Request a Quote",
+    "languageToggle": {
+      "bs": "BS",
+      "en": "EN"
+    }
+  },
+  "Hero": {
+    "headline": "We turn ideas into",
+    "headlineHighlight": "software solutions",
+    "subtitle": "For over 10 years, we have been delivering reliable software solutions for public administration, geodesy, and the private sector across Bosnia and Herzegovina.",
+    "ctaProducts": "View products",
+    "ctaQuote": "Request a Quote",
+    "partnersLabel": "Certified partners"
+  },
+  "SocialProof": {
+    "heading": "Used by 50+ organizations"
+  },
+  "Products": {
+    "heading": "Our solutions",
+    "subtitle": "Integrated software packages designed to automate your business processes, reduce costs, and increase efficiency.",
+    "learnMore": "Learn more",
+    "categories": {
+      "geodezija": "Geodesy",
+      "dokumenti": "Documents",
+      "dalekovodi": "Power Lines",
+      "evidencije": "Records",
+      "podrska": "Support"
+    },
+    "items": {
+      "geodet": {
+        "title": "Geodet",
+        "description": "Automatic processing of geodetic data and generation of standard forms."
+      },
+      "geodet-profili": {
+        "title": "Geodet Profiles",
+        "description": "Visualization and drawing of geodetic terrain profiles with flexible import."
+      },
+      "proman": {
+        "title": "ProMan",
+        "description": "Electronic process management, documents, and centralized client archives."
+      },
+      "dkv-pro": {
+        "title": "DKV-PRO",
+        "description": "Software package for power line design and electromechanical calculations."
+      },
+      "ervip": {
+        "title": "ERVIP",
+        "description": "Time tracking and access control system with biometric support."
+      },
+      "help-desk": {
+        "title": "Help Desk",
+        "description": "Online ticketing system for efficient technical support and customer care."
+      }
+    }
+  },
+  "WhyUs": {
+    "heading": "Information technology for modern age",
+    "stats": {
+      "years": { "value": "10+", "label": "Years of experience" },
+      "clients": { "value": "50+", "label": "Clients" },
+      "products": { "value": "7", "label": "Products" }
+    },
+    "description1": "iT SYSTEMS specializes in design, development, and maintenance of business software. As a system integrator, we offer comprehensive IT solutions tailored for the modern age.",
+    "description2": "Our business philosophy is built on a \"customer first\" approach. We focus on quality and long-term support, offering the optimal balance of price and functionality in the local market."
+  },
+  "News": {
+    "heading": "Latest news",
+    "allNews": "All news",
+    "items": {
+      "news1": {
+        "date": "May 12, 2025",
+        "title": "Elektroprijenos BiH chooses DKV-PRO",
+        "excerpt": "We continue our successful collaboration with the delivery of the latest design modules..."
+      },
+      "news2": {
+        "date": "April 5, 2025",
+        "title": "Geodet implementation in Bosanska Krupa",
+        "excerpt": "The municipality of Bosanska Krupa modernizes cadastre operations with the Geodet application..."
+      },
+      "news3": {
+        "date": "March 22, 2025",
+        "title": "New ProMan system version available",
+        "excerpt": "The update brings advanced archive search options and an improved interface..."
+      }
+    }
+  },
+  "Geodet": {
+    "breadcrumb": {
+      "home": "Home",
+      "products": "Products",
+      "geodezija": "Geodesy",
+      "geodet": "Geodet"
+    },
+    "category": "Geodesy",
+    "heading": "Geodet",
+    "description": "The leading application for automatic processing of geodetic data in BiH. Generate standard geodetic forms and transform coordinates in seconds.",
+    "ctaDemo": "Download demo",
+    "ctaQuote": "Request a Quote",
+    "features": {
+      "instruments": {
+        "title": "Instrument support",
+        "description": "Seamless integration for Topcon, Leica, Sokkia, Trimble, Nikon, and Ruide devices."
+      },
+      "forms": {
+        "title": "Automatic forms",
+        "description": "Generate TZ, O1i2, O1v, O8, O25 forms directly in Excel format."
+      },
+      "cad": {
+        "title": "CAD Integration",
+        "description": "Export to AutoCAD, ZWCAD, BricsCAD, MicroStation, and Google Earth."
+      }
+    },
+    "pricing": {
+      "heading": "Choose your plan",
+      "subtitle": "Flexible licensing options with volume discounts available.",
+      "perLicense": "/ license",
+      "recommended": "Recommended",
+      "standard": {
+        "name": "Standard",
+        "price": "1,000 €",
+        "features": {
+          "basicFeatures": "Core application features",
+          "coordinateTransformation": "Coordinate transformation module",
+          "usbHardlock": "USB HardLock protection"
+        }
+      },
+      "premium": {
+        "name": "Premium",
+        "price": "1,200 €",
+        "features": {
+          "allStandard": "Everything in Standard",
+          "gpsModule": "GPS Module for reports",
+          "googleEarthKml": "Google Earth KML export module"
+        }
+      }
+    },
+    "ctaBanner": {
+      "heading": "Ready to modernize your geodetic processes?",
+      "cta": "Contact us"
+    }
+  },
+  "Contact": {
+    "heading": "Contact us",
+    "subtitle": "We respond to inquiries within 24 hours.",
+    "form": {
+      "name": "Full name",
+      "namePlaceholder": "Enter your name",
+      "email": "Email",
+      "emailPlaceholder": "your@email.com",
+      "phone": "Phone",
+      "phonePlaceholder": "+387 6X XXX XXX",
+      "subject": "Subject",
+      "subjectOptions": {
+        "inquiry": "Quote inquiry",
+        "support": "Technical support",
+        "partnership": "Partnership",
+        "other": "Other"
+      },
+      "message": "Message",
+      "messagePlaceholder": "How can we help you?",
+      "privacy": "I agree that iT Systems may contact me regarding my inquiry in accordance with the Privacy Policy.",
+      "submit": "Send message",
+      "recaptcha": "This site is protected by reCAPTCHA v3.",
+      "validationRequired": "This field is required.",
+      "validationEmail": "Please enter a valid email address."
+    },
+    "info": {
+      "heading": "Information",
+      "address": "Address",
+      "phoneLabel": "Phone / Viber",
+      "emailLabel": "Email",
+      "hours": "Working hours"
+    },
+    "success": {
+      "heading": "Thank you for your message!",
+      "message": "We will respond within 24 hours."
+    }
+  },
+  "Footer": {
+    "description": "Comprehensive IT and business solutions for the modern age. Your reliable partner in business digitalization since 2015.",
+    "quickLinks": "Quick links",
+    "links": {
+      "home": "Home",
+      "products": "All products",
+      "services": "Services & Webshop",
+      "about": "About company",
+      "quote": "Request a Quote"
+    },
+    "solutions": "Featured solutions",
+    "solutionItems": {
+      "geodet": "Geodet",
+      "proman": "ProMan (Electronic Protocol)",
+      "dkv": "DKV-PRO Software",
+      "ervip": "ERVIP (Time Tracking)",
+      "helpdesk": "Help Desk Portal"
+    },
+    "newsletter": "Newsletter",
+    "newsletterText": "Subscribe for news about our products and promotions.",
+    "newsletterPlaceholder": "Email address",
+    "newsletterSubmit": "Subscribe",
+    "copyright": "© {year} iT Systems d.o.o. Sarajevo. All rights reserved.",
+    "privacy": "Privacy policy",
+    "terms": "Terms of use"
+  }
+}

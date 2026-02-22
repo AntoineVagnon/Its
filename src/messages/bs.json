@@ -1,0 +1,215 @@
+{
+  "Header": {
+    "logo": "iT SYSTEMS",
+    "nav": {
+      "home": "Početna",
+      "products": "Proizvodi",
+      "services": "Usluge",
+      "about": "O nama",
+      "contact": "Kontakt"
+    },
+    "cta": "Zatražite ponudu",
+    "languageToggle": {
+      "bs": "BS",
+      "en": "EN"
+    }
+  },
+  "Hero": {
+    "headline": "Pretvaramo ideje u",
+    "headlineHighlight": "softverska rješenja",
+    "subtitle": "Više od 10 godina isporučujemo pouzdana softverska rješenja za javnu upravu, geodeziju i privatni sektor širom Bosne i Hercegovine.",
+    "ctaProducts": "Pogledajte proizvode",
+    "ctaQuote": "Zatražite ponudu",
+    "partnersLabel": "Certificirani partneri"
+  },
+  "SocialProof": {
+    "heading": "Koriste nas 50+ organizacija"
+  },
+  "Products": {
+    "heading": "Naša rješenja",
+    "subtitle": "Integrisani softverski paketi dizajnirani da automatizuju vaše poslovne procese, smanje troškove i povećaju efikasnost.",
+    "learnMore": "Saznajte više",
+    "categories": {
+      "geodezija": "Geodezija",
+      "dokumenti": "Dokumenti",
+      "dalekovodi": "Dalekovodi",
+      "evidencije": "Evidencije",
+      "podrska": "Podrška"
+    },
+    "items": {
+      "geodet": {
+        "title": "Geodet",
+        "description": "Automatska obrada geodetskih podataka i generisanje standardnih obrazaca."
+      },
+      "geodet-profili": {
+        "title": "Geodet Profili",
+        "description": "Vizualizacija i iscrtavanje geodetskih profila terena uz fleksibilan import."
+      },
+      "proman": {
+        "title": "ProMan",
+        "description": "Elektronsko upravljanje procesima, dokumentima i centralna arhiva klijenata."
+      },
+      "dkv-pro": {
+        "title": "DKV-PRO",
+        "description": "Softverski paket za projektovanje dalekovoda i elektromehaničke proračune."
+      },
+      "ervip": {
+        "title": "ERVIP",
+        "description": "Sistem za evidenciju radnog vremena i kontrolu pristupa sa biometrijom."
+      },
+      "help-desk": {
+        "title": "Help Desk",
+        "description": "Online ticketing sistem za efikasnu tehničku podršku i brigu o korisnicima."
+      }
+    }
+  },
+  "WhyUs": {
+    "heading": "Information technology for modern age",
+    "stats": {
+      "years": { "value": "10+", "label": "Godina iskustva" },
+      "clients": { "value": "50+", "label": "Klijenata" },
+      "products": { "value": "7", "label": "Proizvoda" }
+    },
+    "description1": "iT SYSTEMS se bavi projektovanjem, razvojem i održavanjem poslovnih softvera. Kao sistem integrator svojim korisnicima nudimo cjelovita informatička rješenja prilagođena modernom dobu.",
+    "description2": "Naša poslovna filozofija se temelji na pristupu \"kupac na prvom mjestu\". Usmjereni smo na kvalitet i dugoročnu podršku, nudeći optimalan omjer cijene i funkcionalnosti na lokalnom tržištu."
+  },
+  "News": {
+    "heading": "Najnovije vijesti",
+    "allNews": "Sve vijesti",
+    "items": {
+      "news1": {
+        "date": "12. Maj 2025",
+        "title": "Elektroprijenos BiH odabrao DKV-PRO",
+        "excerpt": "Nastavljamo uspješnu saradnju sa isporukom najnovijih modula za projektovanje..."
+      },
+      "news2": {
+        "date": "05. April 2025",
+        "title": "Implementacija Geodeta u Bosanskoj Krupi",
+        "excerpt": "Općina Bosanska Krupa modernizuje rad katastra uz pomoć Geodet aplikacije..."
+      },
+      "news3": {
+        "date": "22. Mart 2025",
+        "title": "Nova verzija ProMan sistema dostupna",
+        "excerpt": "Ažuriranje donosi napredne opcije pretrage arhive i poboljšan interfejs..."
+      }
+    }
+  },
+  "Geodet": {
+    "breadcrumb": {
+      "home": "Početna",
+      "products": "Proizvodi",
+      "geodezija": "Geodezija",
+      "geodet": "Geodet"
+    },
+    "category": "Geodezija",
+    "heading": "Geodet",
+    "description": "Vodeća aplikacija za automatsku obradu geodetskih podataka u BiH. Generišite standardne geodetske obrasce i transformišite koordinate u sekundi.",
+    "ctaDemo": "Preuzmite demo",
+    "ctaQuote": "Zatražite ponudu",
+    "features": {
+      "instruments": {
+        "title": "Podrška za instrumente",
+        "description": "Besprekorna integracija za Topcon, Leica, Sokkia, Trimble, Nikon i Ruide uređaje."
+      },
+      "forms": {
+        "title": "Automatski obrasci",
+        "description": "Generisanje obrazaca TZ, O1i2, O1v, O8, O25 direktno u Excel formatu."
+      },
+      "cad": {
+        "title": "CAD Integracija",
+        "description": "Eksport u AutoCAD, ZWCAD, BricsCAD, MicroStation i Google Earth."
+      }
+    },
+    "pricing": {
+      "heading": "Odaberite paket",
+      "subtitle": "Fleksibilne opcije licenciranja, uz mogućnost količinskog popusta.",
+      "perLicense": "/ licenca",
+      "recommended": "Preporučeno",
+      "standard": {
+        "name": "Standard",
+        "price": "1.000 €",
+        "features": {
+          "basicFeatures": "Osnovne funkcionalnosti aplikacije",
+          "coordinateTransformation": "Modul za transformaciju koordinata",
+          "usbHardlock": "USB HardLock zaštita"
+        }
+      },
+      "premium": {
+        "name": "Premium",
+        "price": "1.200 €",
+        "features": {
+          "allStandard": "Sve iz Standard paketa",
+          "gpsModule": "GPS Modul za izvještaje",
+          "googleEarthKml": "Google Earth KML eksport modul"
+        }
+      }
+    },
+    "ctaBanner": {
+      "heading": "Spremni da modernizirate vaše geodetske procese?",
+      "cta": "Kontaktirajte nas"
+    }
+  },
+  "Contact": {
+    "heading": "Kontaktirajte nas",
+    "subtitle": "Odgovaramo na upite u roku od 24 sata.",
+    "form": {
+      "name": "Ime i prezime",
+      "namePlaceholder": "Unesite vaše ime",
+      "email": "Email",
+      "emailPlaceholder": "vas@email.com",
+      "phone": "Telefon",
+      "phonePlaceholder": "+387 6X XXX XXX",
+      "subject": "Predmet",
+      "subjectOptions": {
+        "inquiry": "Upit za ponudu",
+        "support": "Tehnička podrška",
+        "partnership": "Partnerstvo",
+        "other": "Ostalo"
+      },
+      "message": "Poruka",
+      "messagePlaceholder": "Kako vam možemo pomoći?",
+      "privacy": "Slažem se da iT Systems može kontaktirati povodom mog upita u skladu sa Politikom privatnosti.",
+      "submit": "Pošaljite poruku",
+      "recaptcha": "Ovaj sajt je zaštićen reCAPTCHA v3 sistemom.",
+      "validationRequired": "Ovo polje je obavezno.",
+      "validationEmail": "Unesite validnu email adresu."
+    },
+    "info": {
+      "heading": "Informacije",
+      "address": "Adresa",
+      "phoneLabel": "Telefon / Viber",
+      "emailLabel": "Email",
+      "hours": "Radno vrijeme"
+    },
+    "success": {
+      "heading": "Hvala na poruci!",
+      "message": "Odgovorićemo u roku od 24 sata."
+    }
+  },
+  "Footer": {
+    "description": "Cjelovita informatička i poslovna rješenja za moderno doba. Vaš pouzdan partner u digitalizaciji poslovanja od 2015. godine.",
+    "quickLinks": "Brzi linkovi",
+    "links": {
+      "home": "Početna",
+      "products": "Svi proizvodi",
+      "services": "Usluge i Webshop",
+      "about": "O kompaniji",
+      "quote": "Zatražite ponudu"
+    },
+    "solutions": "Izdvojena rješenja",
+    "solutionItems": {
+      "geodet": "Geodet",
+      "proman": "ProMan (Elektronski protokol)",
+      "dkv": "DKV-PRO Softver",
+      "ervip": "ERVIP (Evidencija radnog vremena)",
+      "helpdesk": "Help Desk Portal"
+    },
+    "newsletter": "Newsletter",
+    "newsletterText": "Prijavite se za novosti o našim proizvodima i akcijama.",
+    "newsletterPlaceholder": "Email adresa",
+    "newsletterSubmit": "Prijava",
+    "copyright": "© {year} iT Systems d.o.o. Sarajevo. Sva prava zadržana.",
+    "privacy": "Politika privatnosti",
+    "terms": "Uslovi korištenja"
+  }
+}
