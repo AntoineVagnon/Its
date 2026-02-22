@@ -1,8 +1,11 @@
-import { useTranslations } from 'next-intl';
+'use client';
+
+import { useTranslations, useLocale } from 'next-intl';
 import { Button } from '@/components/ui/Button';
 
-export function CtaBanner({ locale }: { locale: string }) {
+export function CtaBanner() {
   const t = useTranslations('Geodet');
+  const locale = useLocale();
 
   return (
     <section className="bg-its-gold py-16">

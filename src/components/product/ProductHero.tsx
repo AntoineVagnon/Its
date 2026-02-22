@@ -1,8 +1,11 @@
-import { useTranslations } from 'next-intl';
+'use client';
+
+import { useTranslations, useLocale } from 'next-intl';
 import { Button } from '@/components/ui/Button';
 
-export function ProductHero({ locale }: { locale: string }) {
+export function ProductHero() {
   const t = useTranslations('Geodet');
+  const locale = useLocale();
 
   return (
     <div className="bg-its-navy text-white py-20">

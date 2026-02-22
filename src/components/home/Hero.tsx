@@ -1,10 +1,13 @@
-import { useTranslations } from 'next-intl';
+'use client';
+
+import { useTranslations, useLocale } from 'next-intl';
 import { Button } from '@/components/ui/Button';
 import { LogoStrip } from '@/components/ui/LogoStrip';
 import { PARTNERS } from '@/lib/constants';
 
-export function Hero({ locale }: { locale: string }) {
+export function Hero() {
   const t = useTranslations('Hero');
+  const locale = useLocale();
 
   return (
     <section className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 bg-its-navy overflow-hidden">

@@ -1,3 +1,5 @@
+'use client';
+
 import { useTranslations } from 'next-intl';
 import { LogoStrip } from '@/components/ui/LogoStrip';
 import { CLIENTS } from '@/lib/constants';

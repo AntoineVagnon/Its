@@ -58,12 +58,29 @@ describe('ContactForm', () => {
     expect(alerts.length).toBeGreaterThanOrEqual(1);
   });
 
-  test('shows success message after valid submission', async () => {
+  test('shows validation error when submitting without privacy consent', async () => {
     const user = userEvent.setup();
     render(<ContactForm />);
 
     await user.type(screen.getByPlaceholderText('Unesite vaše ime'), 'Test User');
     await user.type(screen.getByPlaceholderText('vas@email.com'), 'test@test.com');
+
+    await user.click(screen.getByText('Pošaljite poruku'));
+
+    const alerts = screen.getAllByRole('alert');
+    expect(alerts.length).toBeGreaterThanOrEqual(1);
+    expect(screen.queryByTestId('success-message')).not.toBeInTheDocument();
+  });
+
+  test('shows success message after valid submission with privacy consent', async () => {
+    const user = userEvent.setup();
+    render(<ContactForm />);
+
+    await user.type(screen.getByPlaceholderText('Unesite vaše ime'), 'Test User');
+    await user.type(screen.getByPlaceholderText('vas@email.com'), 'test@test.com');
+
+    const checkbox = screen.getByRole('checkbox');
+    await user.click(checkbox);
 
     await user.click(screen.getByText('Pošaljite poruku'));
 
@@ -76,6 +93,9 @@ describe('ContactForm', () => {
 
     await user.type(screen.getByPlaceholderText('Unesite vaše ime'), 'Test User');
     await user.type(screen.getByPlaceholderText('vas@email.com'), 'test@test.com');
+
+    const checkbox = screen.getByRole('checkbox');
+    await user.click(checkbox);
 
     await user.click(screen.getByText('Pošaljite poruku'));
 

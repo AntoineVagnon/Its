@@ -4,18 +4,18 @@ import { ProductGrid } from '../ProductGrid';
 
 describe('ProductGrid', () => {
   test('renders section heading "Naša rješenja"', () => {
-    render(<ProductGrid locale="bs" />);
+    render(<ProductGrid />);
     expect(screen.getByText('Naša rješenja')).toBeInTheDocument();
   });
 
   test('renders exactly 6 product cards', () => {
-    render(<ProductGrid locale="bs" />);
+    render(<ProductGrid />);
     const cards = screen.getAllByText('Saznajte više');
     expect(cards).toHaveLength(6);
   });
 
   test('each card has a category pill, title, description, and arrow link', () => {
-    render(<ProductGrid locale="bs" />);
+    render(<ProductGrid />);
     expect(screen.getByText('Geodet')).toBeInTheDocument();
     // "Geodezija" appears on 2 product cards
     const geodezija = screen.getAllByText('Geodezija');
@@ -24,14 +24,14 @@ describe('ProductGrid', () => {
   });
 
   test('Geodet card links to /proizvodi/geodet', () => {
-    render(<ProductGrid locale="bs" />);
+    render(<ProductGrid />);
     const links = screen.getAllByRole('link');
     const geodetLink = links.find((l) => l.getAttribute('href')?.includes('/proizvodi/geodet'));
     expect(geodetLink).toBeTruthy();
   });
 
   test('grid uses 3-column layout class on desktop', () => {
-    const { container } = render(<ProductGrid locale="bs" />);
+    const { container } = render(<ProductGrid />);
     const grid = container.querySelector('.grid');
     expect(grid?.className).toContain('lg:grid-cols-3');
   });

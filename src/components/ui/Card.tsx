@@ -1,6 +1,5 @@
 import { cn } from '@/lib/utils';
 import { Icon } from '@iconify/react';
-import { ReactNode } from 'react';
 
 interface CardProps {
   icon: string;
@@ -10,7 +9,6 @@ interface CardProps {
   linkText: string;
   href?: string;
   className?: string;
-  children?: ReactNode;
 }
 
 export function Card({

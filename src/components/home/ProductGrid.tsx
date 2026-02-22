@@ -1,10 +1,13 @@
-import { useTranslations } from 'next-intl';
+'use client';
+
+import { useTranslations, useLocale } from 'next-intl';
 import { Card } from '@/components/ui/Card';
 import { ScrollReveal } from '@/components/ui/ScrollReveal';
 import { PRODUCTS } from '@/lib/constants';
 
-export function ProductGrid({ locale }: { locale: string }) {
+export function ProductGrid() {
   const t = useTranslations('Products');
+  const locale = useLocale();
 
   return (
     <section id="proizvodi" className="py-24 max-w-7xl mx-auto px-6">

@@ -1,5 +1,5 @@
 import { describe, test, expect } from 'vitest';
-import { COMPANY, PRODUCTS, NAV_ITEMS, PARTNERS, CLIENTS, GEODET_PRICING } from '@/lib/constants';
+import { COMPANY, PRODUCTS, NAV_ITEMS, PARTNERS, CLIENTS } from '@/lib/constants';
 
 describe('Constants', () => {
   test('COMPANY has name, address, phone, email, hours', () => {
@@ -41,10 +41,4 @@ describe('Constants', () => {
     expect(CLIENTS.length).toBeGreaterThanOrEqual(5);
   });
 
-  test('GEODET_PRICING has standard and premium with price and features', () => {
-    expect(GEODET_PRICING.standard.price).toBeTruthy();
-    expect(GEODET_PRICING.standard.features).toHaveLength(3);
-    expect(GEODET_PRICING.premium.price).toBeTruthy();
-    expect(GEODET_PRICING.premium.features).toHaveLength(3);
-  });
 });

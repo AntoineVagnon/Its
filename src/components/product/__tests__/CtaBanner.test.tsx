@@ -4,17 +4,17 @@ import { CtaBanner } from '../CtaBanner';
 
 describe('CtaBanner', () => {
   test('renders heading about modernizing geodetic processes', () => {
-    render(<CtaBanner locale="bs" />);
+    render(<CtaBanner />);
     expect(screen.getByText(/modernizirate vaše geodetske procese/)).toBeInTheDocument();
   });
 
   test('renders "Kontaktirajte nas" CTA button', () => {
-    render(<CtaBanner locale="bs" />);
+    render(<CtaBanner />);
     expect(screen.getByText('Kontaktirajte nas')).toBeInTheDocument();
   });
 
   test('has gold background', () => {
-    const { container } = render(<CtaBanner locale="bs" />);
+    const { container } = render(<CtaBanner />);
     const section = container.querySelector('section');
     expect(section?.className).toContain('bg-its-gold');
   });

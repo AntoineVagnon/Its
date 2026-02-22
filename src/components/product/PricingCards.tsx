@@ -1,9 +1,12 @@
-import { useTranslations } from 'next-intl';
+'use client';
+
+import { useTranslations, useLocale } from 'next-intl';
 import { Icon } from '@iconify/react';
 import { Button } from '@/components/ui/Button';
 
-export function PricingCards({ locale }: { locale: string }) {
+export function PricingCards() {
   const t = useTranslations('Geodet');
+  const locale = useLocale();
 
   const standardFeatures = ['basicFeatures', 'coordinateTransformation', 'usbHardlock'] as const;
   const premiumFeatures = ['allStandard', 'gpsModule', 'googleEarthKml'] as const;

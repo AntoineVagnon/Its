@@ -19,9 +19,9 @@ export default async function HomePage({
     <>
       <Header />
       <main>
-        <Hero locale={locale} />
+        <Hero />
         <SocialProof />
-        <ProductGrid locale={locale} />
+        <ProductGrid />
         <WhyUs />
         <LatestNews />
       </main>

@@ -26,6 +26,7 @@ export function ContactForm() {
     } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
       newErrors.email = t('form.validationEmail');
     }
+    if (!formData.privacy) newErrors.privacy = t('form.validationRequired');
     return newErrors;
   };
 
@@ -147,18 +148,24 @@ export function ContactForm() {
             onChange={(e) => setFormData({ ...formData, privacy: e.target.checked })}
             className="peer sr-only"
           />
-          <div className="w-4 h-4 rounded border border-gray-300 bg-white peer-checked:bg-its-gold peer-checked:border-its-gold transition-colors" />
+          <div className="w-4 h-4 rounded border border-gray-300 bg-white peer-checked:bg-its-gold peer-checked:border-its-gold transition-colors flex items-center justify-center">
+            {formData.privacy && (
+              <svg width="10" height="8" viewBox="0 0 10 8" fill="none" className="text-white">
+                <path d="M1 4L3.5 6.5L9 1" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+            )}
+          </div>
         </div>
         <span className="text-xs font-light text-its-muted leading-relaxed select-none">
           {t('form.privacy')}
         </span>
       </label>
+      {errors.privacy && (
+        <p className="text-xs text-red-500 -mt-4" role="alert">{errors.privacy}</p>
+      )}
       <Button type="submit" className="w-full sm:w-auto px-8">
         {t('form.submit')}
       </Button>
-      <p className="text-xs font-light text-gray-400 mt-4">
-        {t('form.recaptcha')}
-      </p>
     </form>
   );
 }

@@ -74,27 +74,6 @@ export const CLIENTS = [
   'PAYTEN',
 ];
 
-export const GEODET_PRICING = {
-  standard: {
-    price: '1.000 €',
-    features: [
-      'basicFeatures',
-      'coordinateTransformation',
-      'usbHardlock',
-    ],
-    includes: 'standard',
-  },
-  premium: {
-    price: '1.200 €',
-    features: [
-      'allStandard',
-      'gpsModule',
-      'googleEarthKml',
-    ],
-    includes: 'premium',
-  },
-};
-
 export const SOCIAL_LINKS = [
   { icon: 'solar:users-group-rounded-linear', href: '#', label: 'LinkedIn' },
   { icon: 'solar:video-library-linear', href: '#', label: 'YouTube' },

@@ -33,11 +33,11 @@ export default async function GeodetPage({
       <Header />
       <main>
         <section className="bg-white border-y border-gray-100">
-          <ProductHero locale={locale} />
+          <ProductHero />
           <ValueProps />
-          <PricingCards locale={locale} />
+          <PricingCards />
         </section>
-        <CtaBanner locale={locale} />
+        <CtaBanner />
       </main>
       <Footer />
     </>

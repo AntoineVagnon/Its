@@ -1,3 +1,5 @@
+'use client';
+
 import { useTranslations } from 'next-intl';
 import { Icon } from '@iconify/react';
 import { COMPANY, SOCIAL_LINKS } from '@/lib/constants';
@@ -22,6 +24,8 @@ export function Footer() {
                 <a
                   key={link.label}
                   href={link.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   aria-label={link.label}
                   className="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center text-white hover:bg-its-gold hover:text-its-navy transition-colors"
                 >
@@ -78,7 +82,7 @@ export function Footer() {
                 className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-2 text-sm text-white focus:outline-none focus:border-its-gold transition-colors"
               />
               <button
-                type="button"
+                type="submit"
                 className="bg-its-gold text-its-navy px-4 py-2 rounded-lg text-sm font-medium hover:bg-its-gold-dark transition-colors"
               >
                 {t('newsletterSubmit')}
