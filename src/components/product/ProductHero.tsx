@@ -41,25 +41,13 @@ export function ProductHero() {
               </Button>
             </div>
           </div>
-          <div className="bg-its-navy-light rounded-2xl border border-white/10 aspect-[4/3] flex items-center justify-center relative overflow-hidden shadow-2xl">
-            <div className="w-3/4 h-3/4 bg-white/5 rounded-lg border border-white/10 p-4 flex flex-col gap-3">
-              <div className="flex items-center gap-2 border-b border-white/10 pb-3">
-                <div className="w-3 h-3 rounded-full bg-red-400" />
-                <div className="w-3 h-3 rounded-full bg-yellow-400" />
-                <div className="w-3 h-3 rounded-full bg-green-400" />
-                <div className="w-16 h-2 rounded bg-white/20 ml-2" />
-              </div>
-              <div className="flex gap-3 h-full">
-                <div className="w-1/4 bg-white/5 rounded" />
-                <div className="w-3/4 flex flex-col gap-2">
-                  <div className="w-full h-8 bg-white/10 rounded" />
-                  <div className="w-full h-full bg-white/5 rounded flex items-center justify-center relative overflow-hidden">
-                    <div className="w-[150%] h-[1px] bg-white/10 absolute rotate-45" />
-                    <div className="w-[150%] h-[1px] bg-white/10 absolute -rotate-45" />
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div className="rounded-2xl border border-white/10 aspect-[4/3] overflow-hidden shadow-2xl">
+            <img
+              src="https://images.unsplash.com/photo-1524661135-423995f22d0b?w=800&q=80"
+              alt={t('heroImageAlt')}
+              loading="lazy"
+              className="w-full h-full object-cover"
+            />
           </div>
         </div>
       </div>

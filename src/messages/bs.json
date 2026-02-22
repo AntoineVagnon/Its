@@ -80,17 +80,20 @@
       "news1": {
         "date": "12. Maj 2025",
         "title": "Elektroprijenos BiH odabrao DKV-PRO",
-        "excerpt": "Nastavljamo uspješnu saradnju sa isporukom najnovijih modula za projektovanje..."
+        "excerpt": "Nastavljamo uspješnu saradnju sa isporukom najnovijih modula za projektovanje...",
+        "imageAlt": "Dalekovodi električne energije pri zalasku sunca"
       },
       "news2": {
         "date": "05. April 2025",
         "title": "Implementacija Geodeta u Bosanskoj Krupi",
-        "excerpt": "Općina Bosanska Krupa modernizuje rad katastra uz pomoć Geodet aplikacije..."
+        "excerpt": "Općina Bosanska Krupa modernizuje rad katastra uz pomoć Geodet aplikacije...",
+        "imageAlt": "Panoramski pogled na grad iz vazduha"
       },
       "news3": {
         "date": "22. Mart 2025",
         "title": "Nova verzija ProMan sistema dostupna",
-        "excerpt": "Ažuriranje donosi napredne opcije pretrage arhive i poboljšan interfejs..."
+        "excerpt": "Ažuriranje donosi napredne opcije pretrage arhive i poboljšan interfejs...",
+        "imageAlt": "Moderan kancelarijski radni prostor sa monitorima"
       }
     }
   },
@@ -104,6 +107,7 @@
     "category": "Geodezija",
     "heading": "Geodet",
     "description": "Vodeća aplikacija za automatsku obradu geodetskih podataka u BiH. Generišite standardne geodetske obrasce i transformišite koordinate u sekundi.",
+    "heroImageAlt": "Topografska karta sa visinskim linijama",
     "ctaDemo": "Preuzmite demo",
     "ctaQuote": "Zatražite ponudu",
     "features": {

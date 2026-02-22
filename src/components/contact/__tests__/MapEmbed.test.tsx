@@ -3,16 +3,17 @@ import { render, screen } from '@testing-library/react';
 import { MapEmbed } from '../MapEmbed';
 
 describe('MapEmbed', () => {
-  test('renders map placeholder container', () => {
+  test('renders map embed container', () => {
     render(<MapEmbed />);
-    expect(screen.getByTestId('map-placeholder')).toBeInTheDocument();
+    expect(screen.getByTestId('map-embed')).toBeInTheDocument();
   });
 
-  test('renders pulsing pin marker icon', () => {
-    const { container } = render(<MapEmbed />);
-    const icon = container.querySelector('[data-icon="solar:map-point-linear"]');
-    expect(icon).toBeInTheDocument();
-    const ping = container.querySelector('.animate-ping');
-    expect(ping).toBeInTheDocument();
+  test('renders Google Maps iframe with correct src', () => {
+    render(<MapEmbed />);
+    const iframe = screen.getByTitle('iT Systems office location');
+    expect(iframe).toBeInTheDocument();
+    expect(iframe.tagName).toBe('IFRAME');
+    expect(iframe.getAttribute('src')).toContain('maps.google.com/maps');
+    expect(iframe.getAttribute('src')).toContain('Paromlinska');
   });
 });

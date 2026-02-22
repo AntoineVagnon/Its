@@ -1,23 +1,16 @@
-import { Icon } from '@iconify/react';
-
 export function MapEmbed() {
   return (
     <div
-      className="h-48 rounded-2xl bg-gray-200 border border-gray-100 overflow-hidden relative shadow-inner flex items-center justify-center"
-      data-testid="map-placeholder"
+      className="h-48 rounded-2xl overflow-hidden border border-gray-100 shadow-inner"
+      data-testid="map-embed"
     >
-      <div
-        className="absolute inset-0 opacity-20"
-        style={{
-          backgroundImage:
-            'repeating-linear-gradient(45deg, #1A2332 0, #1A2332 1px, transparent 0, transparent 50%)',
-          backgroundSize: '10px 10px',
-        }}
+      <iframe
+        title="iT Systems office location"
+        src="https://maps.google.com/maps?q=Paromlinska+34,+Sarajevo&t=&z=15&ie=UTF8&iwloc=&output=embed"
+        className="w-full h-full border-0"
+        loading="lazy"
+        referrerPolicy="no-referrer-when-downgrade"
       />
-      <div className="relative z-10 w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-md text-its-gold">
-        <Icon icon="solar:map-point-linear" width={24} />
-        <div className="absolute w-4 h-4 bg-its-gold rounded-full animate-ping opacity-20" />
-      </div>
     </div>
   );
 }
