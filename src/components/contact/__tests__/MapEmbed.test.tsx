@@ -13,7 +13,7 @@ describe('MapEmbed', () => {
     const iframe = screen.getByTitle('iT Systems office location');
     expect(iframe).toBeInTheDocument();
     expect(iframe.tagName).toBe('IFRAME');
-    expect(iframe.getAttribute('src')).toContain('maps.google.com/maps');
+    expect(iframe.getAttribute('src')).toContain('google.com/maps');
     expect(iframe.getAttribute('src')).toContain('Paromlinska');
   });
 });

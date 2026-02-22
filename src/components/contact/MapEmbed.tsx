@@ -6,7 +6,7 @@ export function MapEmbed() {
     >
       <iframe
         title="iT Systems office location"
-        src="https://maps.google.com/maps?q=Paromlinska+34,+Sarajevo&t=&z=15&ie=UTF8&iwloc=&output=embed"
+        src="https://www.google.com/maps?q=Paromlinska+34,+71000+Sarajevo&z=15&output=embed"
         className="w-full h-full border-0"
         loading="lazy"
         referrerPolicy="no-referrer-when-downgrade"

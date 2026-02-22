@@ -8,11 +8,10 @@ describe('Header', () => {
     expect(screen.getByText('iT SYSTEMS')).toBeInTheDocument();
   });
 
-  test('renders all 5 nav items', () => {
+  test('renders all 4 nav items', () => {
     render(<Header />);
     expect(screen.getByText('Početna')).toBeInTheDocument();
     expect(screen.getByText('Proizvodi')).toBeInTheDocument();
-    expect(screen.getByText('Usluge')).toBeInTheDocument();
     expect(screen.getByText('O nama')).toBeInTheDocument();
     expect(screen.getByText('Kontakt')).toBeInTheDocument();
   });

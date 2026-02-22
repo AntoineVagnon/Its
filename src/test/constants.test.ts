@@ -25,8 +25,8 @@ describe('Constants', () => {
     expect(PRODUCTS[0].href).toBe('/proizvodi/geodet');
   });
 
-  test('NAV_ITEMS has 5 items with key and href', () => {
-    expect(NAV_ITEMS).toHaveLength(5);
+  test('NAV_ITEMS has 4 items with key and href', () => {
+    expect(NAV_ITEMS).toHaveLength(4);
     for (const item of NAV_ITEMS) {
       expect(item.key).toBeTruthy();
       expect(item.href).toBeTruthy();

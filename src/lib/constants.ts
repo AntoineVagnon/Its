@@ -52,7 +52,6 @@ export const PRODUCTS = [
 export const NAV_ITEMS = [
   { key: 'home', href: '/' },
   { key: 'products', href: '/#proizvodi' },
-  { key: 'services', href: '/#usluge' },
   { key: 'about', href: '/#o-nama' },
   { key: 'contact', href: '/kontakt' },
 ];

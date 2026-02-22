@@ -13,7 +13,6 @@ describe('MobileNav', () => {
     render(<MobileNav {...defaultProps} />);
     expect(screen.getByText('Početna')).toBeInTheDocument();
     expect(screen.getByText('Proizvodi')).toBeInTheDocument();
-    expect(screen.getByText('Usluge')).toBeInTheDocument();
     expect(screen.getByText('O nama')).toBeInTheDocument();
     expect(screen.getByText('Kontakt')).toBeInTheDocument();
   });
