@@ -64,7 +64,7 @@
     }
   },
   "WhyUs": {
-    "heading": "Information technology for modern age",
+    "heading": "Informacione tehnologije za moderno doba",
     "stats": {
       "years": { "value": "10+", "label": "Godina iskustva" },
       "clients": { "value": "50+", "label": "Klijenata" },
@@ -196,7 +196,6 @@
     "links": {
       "home": "Početna",
       "products": "Svi proizvodi",
-      "services": "Usluge i Webshop",
       "about": "O kompaniji",
       "quote": "Zatražite ponudu"
     },
@@ -212,8 +211,6 @@
     "newsletterText": "Prijavite se za novosti o našim proizvodima i akcijama.",
     "newsletterPlaceholder": "Email adresa",
     "newsletterSubmit": "Prijava",
-    "copyright": "© {year} iT Systems d.o.o. Sarajevo. Sva prava zadržana.",
-    "privacy": "Politika privatnosti",
-    "terms": "Uslovi korištenja"
+    "copyright": "© {year} iT Systems d.o.o. Sarajevo. Sva prava zadržana."
   }
 }

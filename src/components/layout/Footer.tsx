@@ -1,11 +1,12 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 import { Icon } from '@iconify/react';
 import { COMPANY, SOCIAL_LINKS } from '@/lib/constants';
 
 export function Footer() {
   const t = useTranslations('Footer');
+  const locale = useLocale();
 
   return (
     <footer className="bg-its-navy pt-20 pb-10 border-t border-white/10">
@@ -41,10 +42,15 @@ export function Footer() {
               {t('quickLinks')}
             </h4>
             <ul className="space-y-3">
-              {(['home', 'products', 'services', 'about', 'quote'] as const).map((key) => (
-                <li key={key}>
-                  <a href="#" className="text-sm font-light text-gray-400 hover:text-white transition-colors">
-                    {t(`links.${key}`)}
+              {([
+                { key: 'home', href: `/${locale}/` },
+                { key: 'products', href: `/${locale}/#proizvodi` },
+                { key: 'about', href: `/${locale}/#o-nama` },
+                { key: 'quote', href: `/${locale}/kontakt` },
+              ] as const).map((item) => (
+                <li key={item.key}>
+                  <a href={item.href} className="text-sm font-light text-gray-400 hover:text-white transition-colors">
+                    {t(`links.${item.key}`)}
                   </a>
                 </li>
               ))}
@@ -57,10 +63,16 @@ export function Footer() {
               {t('solutions')}
             </h4>
             <ul className="space-y-3">
-              {(['geodet', 'proman', 'dkv', 'ervip', 'helpdesk'] as const).map((key) => (
-                <li key={key}>
-                  <a href="#" className="text-sm font-light text-gray-400 hover:text-its-gold transition-colors">
-                    {t(`solutionItems.${key}`)}
+              {([
+                { key: 'geodet', href: `/${locale}/proizvodi/geodet` },
+                { key: 'proman', href: `/${locale}/kontakt` },
+                { key: 'dkv', href: `/${locale}/kontakt` },
+                { key: 'ervip', href: `/${locale}/kontakt` },
+                { key: 'helpdesk', href: `/${locale}/kontakt` },
+              ] as const).map((item) => (
+                <li key={item.key}>
+                  <a href={item.href} className="text-sm font-light text-gray-400 hover:text-its-gold transition-colors">
+                    {t(`solutionItems.${item.key}`)}
                   </a>
                 </li>
               ))}
@@ -92,18 +104,10 @@ export function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4">
+        <div className="pt-8 border-t border-white/10 flex items-center justify-center">
           <p className="text-xs font-light text-gray-500">
             {t('copyright', { year: new Date().getFullYear() })}
           </p>
-          <div className="flex gap-6">
-            <a href="#" className="text-xs font-light text-gray-500 hover:text-white transition-colors">
-              {t('privacy')}
-            </a>
-            <a href="#" className="text-xs font-light text-gray-500 hover:text-white transition-colors">
-              {t('terms')}
-            </a>
-          </div>
         </div>
       </div>
     </footer>

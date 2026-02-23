@@ -21,31 +21,31 @@ export const PRODUCTS = [
     id: 'geodet-profili',
     icon: 'solar:graph-up-linear',
     categoryKey: 'geodezija',
-    href: '#',
+    href: '/kontakt',
   },
   {
     id: 'proman',
     icon: 'solar:document-text-linear',
     categoryKey: 'dokumenti',
-    href: '#',
+    href: '/kontakt',
   },
   {
     id: 'dkv-pro',
     icon: 'solar:bolt-linear',
     categoryKey: 'dalekovodi',
-    href: '#',
+    href: '/kontakt',
   },
   {
     id: 'ervip',
     icon: 'solar:clock-circle-linear',
     categoryKey: 'evidencije',
-    href: '#',
+    href: '/kontakt',
   },
   {
     id: 'help-desk',
     icon: 'solar:headphones-round-linear',
     categoryKey: 'podrska',
-    href: '#',
+    href: '/kontakt',
   },
 ];
 
@@ -74,7 +74,6 @@ export const CLIENTS = [
 ];
 
 export const SOCIAL_LINKS = [
-  { icon: 'solar:users-group-rounded-linear', href: '#', label: 'LinkedIn' },
-  { icon: 'solar:video-library-linear', href: '#', label: 'YouTube' },
-  { icon: 'solar:briefcase-linear', href: '#', label: 'Facebook' },
+  { icon: 'mdi:linkedin', href: 'https://www.linkedin.com/company/itsystems-ba', label: 'LinkedIn' },
+  { icon: 'mdi:facebook', href: 'https://www.facebook.com/itsystems.ba', label: 'Facebook' },
 ];

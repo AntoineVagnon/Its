@@ -196,7 +196,6 @@
     "links": {
       "home": "Home",
       "products": "All products",
-      "services": "Services & Webshop",
       "about": "About company",
       "quote": "Request a Quote"
     },
@@ -212,8 +211,6 @@
     "newsletterText": "Subscribe for news about our products and promotions.",
     "newsletterPlaceholder": "Email address",
     "newsletterSubmit": "Subscribe",
-    "copyright": "© {year} iT Systems d.o.o. Sarajevo. All rights reserved.",
-    "privacy": "Privacy policy",
-    "terms": "Terms of use"
+    "copyright": "© {year} iT Systems d.o.o. Sarajevo. All rights reserved."
   }
 }

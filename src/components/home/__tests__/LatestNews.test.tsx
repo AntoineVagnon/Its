@@ -19,9 +19,8 @@ describe('LatestNews', () => {
     expect(screen.getByText(/Nastavljamo uspješnu saradnju/)).toBeInTheDocument();
   });
 
-  test('renders "Sve vijesti" link', () => {
+  test('renders section heading', () => {
     render(<LatestNews />);
-    const links = screen.getAllByText('Sve vijesti');
-    expect(links.length).toBeGreaterThanOrEqual(1);
+    expect(screen.getByText('Najnovije vijesti')).toBeInTheDocument();
   });
 });

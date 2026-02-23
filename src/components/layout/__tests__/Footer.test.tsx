@@ -28,15 +28,14 @@ describe('Footer', () => {
     expect(grid?.children.length).toBe(4);
   });
 
-  test('renders social media icons (3)', () => {
+  test('renders social media icons (2)', () => {
     render(<Footer />);
     const links = screen.getAllByRole('link');
     const socialLinks = links.filter(
       (l) => l.getAttribute('aria-label') === 'LinkedIn' ||
-             l.getAttribute('aria-label') === 'YouTube' ||
              l.getAttribute('aria-label') === 'Facebook'
     );
-    expect(socialLinks.length).toBe(3);
+    expect(socialLinks.length).toBe(2);
   });
 
   test('renders copyright with current year', () => {
