@@ -11,13 +11,28 @@ export function Hero() {
 
   return (
     <section className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 bg-its-navy overflow-hidden">
+      {/* Subtle grid */}
       <div
-        className="absolute inset-0 opacity-10"
+        className="absolute inset-0 opacity-[0.04]"
         style={{
-          backgroundImage: 'radial-gradient(#ffffff 1px, transparent 1px)',
-          backgroundSize: '32px 32px',
+          backgroundImage:
+            'linear-gradient(to right, #ffffff 1px, transparent 1px), linear-gradient(to bottom, #ffffff 1px, transparent 1px)',
+          backgroundSize: '64px 64px',
         }}
       />
+      {/* Gold accent glow — top right */}
+      <div className="absolute -top-32 -right-32 w-[500px] h-[500px] rounded-full bg-its-gold/10 blur-[120px]" />
+      {/* Blue accent glow — bottom left */}
+      <div className="absolute -bottom-40 -left-40 w-[600px] h-[600px] rounded-full bg-its-blue/10 blur-[140px]" />
+      {/* Diagonal accent line */}
+      <div className="absolute inset-0 overflow-hidden">
+        <div
+          className="absolute top-0 left-1/4 w-[1px] h-[140%] bg-gradient-to-b from-transparent via-its-gold/20 to-transparent -rotate-[25deg] origin-top"
+        />
+        <div
+          className="absolute top-0 right-1/3 w-[1px] h-[140%] bg-gradient-to-b from-transparent via-white/10 to-transparent -rotate-[25deg] origin-top"
+        />
+      </div>
       <div className="max-w-7xl mx-auto px-6 relative z-10 text-center">
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold text-white tracking-tight mb-6 max-w-4xl mx-auto leading-tight">
           {t('headline')}{' '}
