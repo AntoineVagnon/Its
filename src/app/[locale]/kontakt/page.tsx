@@ -34,10 +34,10 @@ export default async function ContactPage({
       <main>
         <section className="py-24 pt-32 max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
-            <h1 className="text-3xl font-semibold tracking-tight text-its-navy mb-3">
+            <h1 className="text-4xl font-bold tracking-tight text-white mb-3">
               {t('heading')}
             </h1>
-            <p className="text-base font-light text-its-muted">
+            <p className="text-lg font-light text-gray-400">
               {t('subtitle')}
             </p>
           </div>

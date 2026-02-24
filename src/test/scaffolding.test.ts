@@ -12,17 +12,18 @@ describe('Scaffolding', () => {
     expect(globalsCss).toContain('@import "tailwindcss"');
   });
 
-  test('globals.css defines --color-its-gold: #EABB00', () => {
-    expect(globalsCss).toContain('--color-its-gold: #EABB00');
+  test('globals.css defines --color-its-accent: #FACC15', () => {
+    expect(globalsCss).toContain('--color-its-accent: #FACC15');
   });
 
-  test('globals.css defines all 9 design token colors', () => {
+  test('globals.css defines all design token colors', () => {
     const tokens = [
-      '--color-its-navy',
-      '--color-its-navy-light',
-      '--color-its-gold',
-      '--color-its-gold-dark',
-      '--color-its-gold-light',
+      '--color-its-dark',
+      '--color-its-dark-light',
+      '--color-its-dark-card',
+      '--color-its-accent',
+      '--color-its-accent-dark',
+      '--color-its-accent-light',
       '--color-its-blue',
       '--color-its-surface',
       '--color-its-text',

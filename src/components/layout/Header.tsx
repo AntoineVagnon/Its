@@ -27,14 +27,17 @@ export function Header() {
         className={cn(
           'fixed w-full top-0 z-50 transition-all duration-300',
           scrolled
-            ? 'bg-white/80 backdrop-blur-md border-b border-gray-100'
+            ? 'bg-its-dark/80 backdrop-blur-xl border-b border-white/10'
             : 'bg-transparent'
         )}
         data-testid="header"
       >
         <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
           <div className="flex items-center gap-12">
-            <a href={`/${locale}/`} className="text-xl font-medium tracking-tighter text-its-navy">
+            <a href={`/${locale}/`} className="flex items-center gap-2.5 text-xl font-semibold tracking-tighter text-white">
+              <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-its-accent to-its-accent-dark flex items-center justify-center">
+                <div className="w-2 h-2 bg-its-dark rounded-full" />
+              </div>
               {t('logo')}
             </a>
             <div className="hidden md:flex items-center gap-8">
@@ -45,8 +48,8 @@ export function Header() {
                   className={cn(
                     'text-sm transition-colors',
                     i === 0
-                      ? 'font-medium text-its-navy'
-                      : 'font-normal text-its-muted hover:text-its-navy'
+                      ? 'font-medium text-white'
+                      : 'font-normal text-gray-400 hover:text-white'
                   )}
                 >
                   {t(`nav.${item.key}`)}
@@ -61,7 +64,7 @@ export function Header() {
             </Button>
           </div>
           <button
-            className="md:hidden text-its-navy"
+            className="md:hidden text-white"
             onClick={() => setMobileOpen(!mobileOpen)}
             aria-label="Toggle menu"
             data-testid="hamburger"

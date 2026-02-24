@@ -11,7 +11,6 @@ export function LogoStrip({ logos, variant = 'dark', className }: LogoStripProps
     <div
       className={cn(
         'flex flex-wrap justify-center items-center gap-10 md:gap-16',
-        variant === 'light' ? 'opacity-50 grayscale' : '',
         className
       )}
     >
@@ -20,7 +19,7 @@ export function LogoStrip({ logos, variant = 'dark', className }: LogoStripProps
           key={name}
           className={cn(
             'text-xl font-medium tracking-tighter',
-            variant === 'light' ? 'text-white' : 'text-gray-300'
+            variant === 'light' ? 'text-white/40' : 'text-white/30'
           )}
         >
           {name}

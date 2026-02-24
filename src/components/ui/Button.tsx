@@ -15,13 +15,13 @@ interface ButtonProps {
 
 const variantClasses: Record<ButtonVariant, string> = {
   primary:
-    'bg-its-gold text-its-navy hover:bg-its-gold-dark shadow-sm',
+    'bg-its-accent text-its-dark hover:bg-its-accent-dark shadow-sm shadow-its-accent/20',
   ghost:
-    'bg-white/10 text-white border border-white/20 hover:bg-white/20',
-  link: 'text-its-blue hover:text-its-navy',
+    'bg-white/10 text-white border border-white/20 hover:bg-white/20 backdrop-blur-sm',
+  link: 'text-its-accent hover:text-white',
   outline:
-    'border border-gray-200 text-its-navy hover:bg-gray-50',
-  dark: 'bg-its-navy text-white hover:bg-its-navy-light shadow-sm',
+    'border border-white/20 text-white hover:bg-white/5',
+  dark: 'bg-its-dark text-white hover:bg-its-dark-light border border-white/10 shadow-sm',
 };
 
 export function Button({

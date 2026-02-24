@@ -54,7 +54,7 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale} className={inter.variable}>
-      <body className="bg-its-surface text-its-text font-sans antialiased selection:bg-its-gold selection:text-its-navy">
+      <body className="bg-its-dark text-its-text font-sans antialiased selection:bg-its-accent selection:text-its-dark">
         <NextIntlClientProvider messages={messages}>
           {children}
         </NextIntlClientProvider>

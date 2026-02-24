@@ -18,9 +18,9 @@ describe('LogoStrip', () => {
     expect(el.className).toContain('text-white');
   });
 
-  test('dark variant uses text-gray-300', () => {
+  test('dark variant uses text-white/30', () => {
     render(<LogoStrip logos={logos} variant="dark" />);
     const el = screen.getByText('IBM');
-    expect(el.className).toContain('text-gray-300');
+    expect(el.className).toContain('text-white/30');
   });
 });

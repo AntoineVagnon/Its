@@ -31,21 +31,21 @@ export function ContactInfo() {
   const t = useTranslations('Contact');
 
   return (
-    <div className="bg-white p-8 rounded-2xl border border-gray-100 shadow-sm">
-      <h3 className="text-lg font-medium tracking-tight text-its-navy mb-6">
+    <div className="bg-white/5 backdrop-blur-sm p-8 rounded-2xl border border-white/10">
+      <h3 className="text-lg font-medium tracking-tight text-white mb-6">
         {t('info.heading')}
       </h3>
       <ul className="space-y-6">
         {infoItems.map((item) => (
           <li key={item.labelKey} className="flex items-start gap-4">
-            <div className="w-8 h-8 rounded-full bg-gray-50 flex items-center justify-center shrink-0">
-              <Icon icon={item.icon} className="text-its-navy" width={18} />
+            <div className="w-8 h-8 rounded-xl bg-its-accent/10 flex items-center justify-center shrink-0">
+              <Icon icon={item.icon} className="text-its-accent" width={18} />
             </div>
             <div>
-              <p className="text-xs font-medium text-its-muted uppercase tracking-wide mb-1">
+              <p className="text-xs font-medium text-gray-500 uppercase tracking-wide mb-1">
                 {t(`info.${item.labelKey}`)}
               </p>
-              <p className="text-sm font-normal text-its-navy">
+              <p className="text-sm font-normal text-white">
                 {item.lines.map((line, i) => (
                   <span key={i}>
                     {line}

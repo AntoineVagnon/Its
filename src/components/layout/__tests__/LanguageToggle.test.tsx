@@ -12,7 +12,7 @@ describe('LanguageToggle', () => {
   test('current locale (bs) is visually emphasized (darker text)', () => {
     render(<LanguageToggle />);
     const bs = screen.getByText('BS');
-    expect(bs.className).toContain('text-its-navy');
+    expect(bs.className).toContain('text-white');
   });
 
   test('other locale is a clickable link', () => {

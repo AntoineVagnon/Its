@@ -7,7 +7,7 @@ describe('Hero', () => {
     render(<Hero />);
     const highlight = screen.getByText('softverska rješenja');
     expect(highlight).toBeInTheDocument();
-    expect(highlight.className).toContain('text-its-gold');
+    expect(highlight.className).toContain('text-its-accent');
   });
 
   test('renders subtitle about 10+ years', () => {
@@ -32,9 +32,9 @@ describe('Hero', () => {
     expect(screen.getByText('HCL')).toBeInTheDocument();
   });
 
-  test('has navy background class', () => {
+  test('has dark background class', () => {
     const { container } = render(<Hero />);
     const section = container.querySelector('section');
-    expect(section?.className).toContain('bg-its-navy');
+    expect(section?.className).toContain('bg-its-dark');
   });
 });

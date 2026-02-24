@@ -13,18 +13,18 @@ export function LatestNews() {
   const newsKeys = ['news1', 'news2', 'news3'] as const;
 
   return (
-    <section className="py-24 bg-white border-y border-gray-100">
+    <section className="py-24 border-t border-white/5">
       <div className="max-w-7xl mx-auto px-6">
         <div className="mb-12">
-          <h2 className="text-3xl font-semibold tracking-tight text-its-navy">
+          <h2 className="text-4xl font-bold tracking-tight text-white">
             {t('heading')}
           </h2>
         </div>
 
         <div className="grid md:grid-cols-3 gap-6">
           {newsKeys.map((key) => (
-            <div key={key} className="group block">
-              <div className="aspect-[16/9] rounded-xl mb-4 overflow-hidden border border-gray-100 relative">
+            <div key={key} className="group block bg-white/5 backdrop-blur-sm rounded-2xl overflow-hidden border border-white/10 hover:border-white/20 transition-all duration-300">
+              <div className="aspect-[16/9] overflow-hidden relative">
                 <img
                   src={newsImages[key]}
                   alt={t(`items.${key}.imageAlt`)}
@@ -32,15 +32,17 @@ export function LatestNews() {
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 />
               </div>
-              <span className="text-xs font-medium text-its-gold mb-2 block">
-                {t(`items.${key}.date`)}
-              </span>
-              <h3 className="text-lg font-medium tracking-tight text-its-navy mb-2 group-hover:text-its-blue transition-colors">
-                {t(`items.${key}.title`)}
-              </h3>
-              <p className="text-sm font-light text-its-muted line-clamp-2">
-                {t(`items.${key}.excerpt`)}
-              </p>
+              <div className="p-6">
+                <span className="text-xs font-medium text-its-accent mb-2 block">
+                  {t(`items.${key}.date`)}
+                </span>
+                <h3 className="text-lg font-medium tracking-tight text-white mb-2 group-hover:text-its-accent transition-colors">
+                  {t(`items.${key}.title`)}
+                </h3>
+                <p className="text-sm font-light text-gray-400 line-clamp-2">
+                  {t(`items.${key}.excerpt`)}
+                </p>
+              </div>
             </div>
           ))}
         </div>

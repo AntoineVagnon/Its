@@ -1,13 +1,40 @@
 @import "tailwindcss";
 
 @theme {
-  --color-its-navy: #1A2332;
-  --color-its-navy-light: #2A3544;
-  --color-its-gold: #EABB00;
-  --color-its-gold-dark: #C99E00;
-  --color-its-gold-light: #FDF3D0;
-  --color-its-blue: #117ABC;
-  --color-its-surface: #F9FAFB;
-  --color-its-text: #1F2937;
-  --color-its-muted: #6B7280;
+  --color-its-dark: #111827;
+  --color-its-dark-light: #1F2937;
+  --color-its-dark-card: #1a2236;
+  --color-its-accent: #FACC15;
+  --color-its-accent-dark: #EAB308;
+  --color-its-accent-light: #FEF9C3;
+  --color-its-blue: #3B82F6;
+  --color-its-surface: #111827;
+  --color-its-text: #F9FAFB;
+  --color-its-muted: #9CA3AF;
+
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-spin-slow: spin 20s linear infinite;
+  --animate-glow-drift: glow-drift 8s ease-in-out infinite;
+  --animate-fade-in-up: fade-in-up 0.8s ease-out forwards;
+  --animate-pulse-soft: pulse-soft 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes glow-drift {
+  0%, 100% { transform: scale(1); opacity: 0.5; }
+  50% { transform: scale(1.15); opacity: 0.8; }
+}
+
+@keyframes fade-in-up {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulse-soft {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 0.7; }
 }

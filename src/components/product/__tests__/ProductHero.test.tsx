@@ -32,10 +32,9 @@ describe('ProductHero', () => {
     expect(screen.getByText('Zatražite ponudu')).toBeInTheDocument();
   });
 
-  test('renders abstract app mockup visual', () => {
+  test('renders glass UI mockup visual', () => {
     const { container } = render(<ProductHero />);
-    // Arbitrary value class needs double escaping in querySelector
-    const mockup = container.querySelector('[class*="aspect-"]');
+    const mockup = container.querySelector('[class*="backdrop-blur"]');
     expect(mockup).toBeInTheDocument();
   });
 });

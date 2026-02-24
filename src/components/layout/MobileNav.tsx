@@ -23,7 +23,7 @@ export function MobileNav({ isOpen, onClose, locale }: MobileNavProps) {
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -10 }}
           transition={{ duration: 0.2 }}
-          className="md:hidden bg-white border-b border-gray-100 shadow-lg"
+          className="md:hidden bg-its-dark/95 backdrop-blur-xl border-b border-white/10 shadow-2xl"
           data-testid="mobile-nav"
         >
           <div className="px-6 py-6 space-y-4">
@@ -32,7 +32,7 @@ export function MobileNav({ isOpen, onClose, locale }: MobileNavProps) {
                 key={item.key}
                 href={`/${locale}${item.href}`}
                 onClick={onClose}
-                className="block text-sm font-medium text-its-navy py-2"
+                className="block text-sm font-medium text-white py-2"
               >
                 {t(`nav.${item.key}`)}
               </a>

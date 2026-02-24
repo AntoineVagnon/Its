@@ -1,7 +1,7 @@
 export function MapEmbed() {
   return (
     <div
-      className="h-48 rounded-2xl overflow-hidden border border-gray-100 shadow-inner"
+      className="h-48 rounded-2xl overflow-hidden border border-white/10"
       data-testid="map-embed"
     >
       <iframe

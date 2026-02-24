@@ -14,31 +14,31 @@ export function PricingCards() {
   return (
     <div className="max-w-4xl mx-auto px-6 pb-24">
       <div className="text-center mb-12">
-        <h3 className="text-2xl font-semibold tracking-tight text-its-navy mb-3">
+        <h3 className="text-3xl font-bold tracking-tight text-white mb-3">
           {t('pricing.heading')}
         </h3>
-        <p className="text-sm font-light text-its-muted">
+        <p className="text-base font-light text-gray-400">
           {t('pricing.subtitle')}
         </p>
       </div>
       <div className="grid md:grid-cols-2 gap-6">
         {/* Standard */}
-        <div className="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm flex flex-col">
-          <h4 className="text-lg font-medium tracking-tight text-its-navy mb-2">
+        <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10 flex flex-col">
+          <h4 className="text-lg font-medium tracking-tight text-white mb-2">
             {t('pricing.standard.name')}
           </h4>
           <div className="flex items-baseline gap-2 mb-6">
-            <span className="text-3xl font-semibold tracking-tight text-its-navy">
+            <span className="text-3xl font-bold tracking-tight text-white">
               {t('pricing.standard.price')}
             </span>
-            <span className="text-sm font-light text-its-muted">
+            <span className="text-sm font-light text-gray-400">
               {t('pricing.perLicense')}
             </span>
           </div>
           <ul className="space-y-4 mb-8 flex-1">
             {standardFeatures.map((key) => (
-              <li key={key} className="flex items-start gap-3 text-sm font-light text-its-text">
-                <Icon icon="solar:check-circle-linear" className="text-its-blue mt-0.5 shrink-0" width={18} />
+              <li key={key} className="flex items-start gap-3 text-sm font-light text-gray-300">
+                <Icon icon="solar:check-circle-linear" className="text-its-accent mt-0.5 shrink-0" width={18} />
                 {t(`pricing.standard.features.${key}`)}
               </li>
             ))}
@@ -49,18 +49,18 @@ export function PricingCards() {
         </div>
 
         {/* Premium */}
-        <div className="bg-white rounded-2xl p-8 border-2 border-its-gold shadow-md flex flex-col relative">
-          <div className="absolute top-0 right-8 transform -translate-y-1/2 bg-its-gold text-its-navy text-xs font-semibold px-3 py-1 rounded-full">
+        <div className="bg-its-dark-card rounded-2xl p-8 border-2 border-its-accent/30 shadow-lg shadow-its-accent/5 flex flex-col relative">
+          <div className="absolute top-0 right-8 transform -translate-y-1/2 bg-its-accent text-its-dark text-xs font-semibold px-3 py-1 rounded-full">
             {t('pricing.recommended')}
           </div>
-          <h4 className="text-lg font-medium tracking-tight text-its-navy mb-2">
+          <h4 className="text-lg font-medium tracking-tight text-white mb-2">
             {t('pricing.premium.name')}
           </h4>
           <div className="flex items-baseline gap-2 mb-6">
-            <span className="text-3xl font-semibold tracking-tight text-its-navy">
+            <span className="text-3xl font-bold tracking-tight text-its-accent">
               {t('pricing.premium.price')}
             </span>
-            <span className="text-sm font-light text-its-muted">
+            <span className="text-sm font-light text-gray-400">
               {t('pricing.perLicense')}
             </span>
           </div>
@@ -68,14 +68,14 @@ export function PricingCards() {
             {premiumFeatures.map((key, i) => (
               <li
                 key={key}
-                className={`flex items-start gap-3 text-sm ${i === 0 ? 'font-light text-its-text' : 'font-medium text-its-navy'}`}
+                className={`flex items-start gap-3 text-sm ${i === 0 ? 'font-light text-gray-300' : 'font-medium text-white'}`}
               >
-                <Icon icon="solar:check-circle-linear" className="text-its-gold mt-0.5 shrink-0" width={18} />
+                <Icon icon="solar:check-circle-linear" className="text-its-accent mt-0.5 shrink-0" width={18} />
                 {t(`pricing.premium.features.${key}`)}
               </li>
             ))}
           </ul>
-          <Button variant="dark" href={`/${locale}/kontakt`} className="w-full py-2.5">
+          <Button href={`/${locale}/kontakt`} className="w-full py-2.5">
             {t('ctaQuote')}
           </Button>
         </div>

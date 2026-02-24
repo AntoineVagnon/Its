@@ -41,14 +41,14 @@ export function ContactForm() {
 
   if (submitted) {
     return (
-      <div className="bg-white rounded-2xl p-12 border border-gray-100 shadow-sm text-center" data-testid="success-message">
-        <div className="w-16 h-16 rounded-full bg-its-gold-light mx-auto mb-6 flex items-center justify-center">
-          <Icon icon="solar:check-circle-linear" width={32} className="text-its-gold" />
+      <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-12 border border-white/10 text-center" data-testid="success-message">
+        <div className="w-16 h-16 rounded-full bg-its-accent/10 mx-auto mb-6 flex items-center justify-center">
+          <Icon icon="solar:check-circle-linear" width={32} className="text-its-accent" />
         </div>
-        <h3 className="text-2xl font-semibold tracking-tight text-its-navy mb-3">
+        <h3 className="text-2xl font-bold tracking-tight text-white mb-3">
           {t('success.heading')}
         </h3>
-        <p className="text-base font-light text-its-muted">
+        <p className="text-base font-light text-gray-400">
           {t('success.message')}
         </p>
       </div>
@@ -57,65 +57,67 @@ export function ContactForm() {
 
   const subjectOptions = ['inquiry', 'support', 'partnership', 'other'] as const;
 
+  const inputClasses = 'w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-sm text-white placeholder:text-gray-500 focus:outline-none focus:border-its-accent focus:ring-1 focus:ring-its-accent/50 transition-colors';
+
   return (
     <form onSubmit={handleSubmit} className="space-y-6" noValidate>
       <div className="grid sm:grid-cols-2 gap-6">
         <div>
-          <label className="block text-xs font-medium text-its-navy mb-2 uppercase tracking-wide">
+          <label className="block text-xs font-medium text-gray-300 mb-2 uppercase tracking-wide">
             {t('form.name')}
           </label>
           <input
             type="text"
             value={formData.name}
             onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-            className="w-full bg-white border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-its-gold focus:ring-1 focus:ring-its-gold transition-colors"
+            className={inputClasses}
             placeholder={t('form.namePlaceholder')}
           />
           {errors.name && (
-            <p className="text-xs text-red-500 mt-1" role="alert">{errors.name}</p>
+            <p className="text-xs text-red-400 mt-1" role="alert">{errors.name}</p>
           )}
         </div>
         <div>
-          <label className="block text-xs font-medium text-its-navy mb-2 uppercase tracking-wide">
+          <label className="block text-xs font-medium text-gray-300 mb-2 uppercase tracking-wide">
             {t('form.email')}
           </label>
           <input
             type="email"
             value={formData.email}
             onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-            className="w-full bg-white border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-its-gold focus:ring-1 focus:ring-its-gold transition-colors"
+            className={inputClasses}
             placeholder={t('form.emailPlaceholder')}
           />
           {errors.email && (
-            <p className="text-xs text-red-500 mt-1" role="alert">{errors.email}</p>
+            <p className="text-xs text-red-400 mt-1" role="alert">{errors.email}</p>
           )}
         </div>
       </div>
       <div className="grid sm:grid-cols-2 gap-6">
         <div>
-          <label className="block text-xs font-medium text-its-navy mb-2 uppercase tracking-wide">
+          <label className="block text-xs font-medium text-gray-300 mb-2 uppercase tracking-wide">
             {t('form.phone')}
           </label>
           <input
             type="text"
             value={formData.phone}
             onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-            className="w-full bg-white border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-its-gold focus:ring-1 focus:ring-its-gold transition-colors"
+            className={inputClasses}
             placeholder={t('form.phonePlaceholder')}
           />
         </div>
         <div>
-          <label className="block text-xs font-medium text-its-navy mb-2 uppercase tracking-wide">
+          <label className="block text-xs font-medium text-gray-300 mb-2 uppercase tracking-wide">
             {t('form.subject')}
           </label>
           <div className="relative">
             <select
               value={formData.subject}
               onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
-              className="w-full bg-white border border-gray-200 rounded-lg px-4 py-3 text-sm appearance-none focus:outline-none focus:border-its-gold focus:ring-1 focus:ring-its-gold transition-colors text-its-text"
+              className={`${inputClasses} appearance-none`}
             >
               {subjectOptions.map((opt) => (
-                <option key={opt} value={opt}>
+                <option key={opt} value={opt} className="bg-its-dark text-white">
                   {t(`form.subjectOptions.${opt}`)}
                 </option>
               ))}
@@ -129,14 +131,14 @@ export function ContactForm() {
         </div>
       </div>
       <div>
-        <label className="block text-xs font-medium text-its-navy mb-2 uppercase tracking-wide">
+        <label className="block text-xs font-medium text-gray-300 mb-2 uppercase tracking-wide">
           {t('form.message')}
         </label>
         <textarea
           rows={4}
           value={formData.message}
           onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-          className="w-full bg-white border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-its-gold focus:ring-1 focus:ring-its-gold transition-colors resize-none"
+          className={`${inputClasses} resize-none`}
           placeholder={t('form.messagePlaceholder')}
         />
       </div>
@@ -148,20 +150,20 @@ export function ContactForm() {
             onChange={(e) => setFormData({ ...formData, privacy: e.target.checked })}
             className="peer sr-only"
           />
-          <div className="w-4 h-4 rounded border border-gray-300 bg-white peer-checked:bg-its-gold peer-checked:border-its-gold transition-colors flex items-center justify-center">
+          <div className="w-4 h-4 rounded border border-white/20 bg-white/5 peer-checked:bg-its-accent peer-checked:border-its-accent transition-colors flex items-center justify-center">
             {formData.privacy && (
-              <svg width="10" height="8" viewBox="0 0 10 8" fill="none" className="text-white">
+              <svg width="10" height="8" viewBox="0 0 10 8" fill="none" className="text-its-dark">
                 <path d="M1 4L3.5 6.5L9 1" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
             )}
           </div>
         </div>
-        <span className="text-xs font-light text-its-muted leading-relaxed select-none">
+        <span className="text-xs font-light text-gray-400 leading-relaxed select-none">
           {t('form.privacy')}
         </span>
       </label>
       {errors.privacy && (
-        <p className="text-xs text-red-500 -mt-4" role="alert">{errors.privacy}</p>
+        <p className="text-xs text-red-400 -mt-4" role="alert">{errors.privacy}</p>
       )}
       <Button type="submit" className="w-full sm:w-auto px-8">
         {t('form.submit')}

@@ -12,10 +12,10 @@ export function ProductGrid() {
   return (
     <section id="proizvodi" className="py-24 max-w-7xl mx-auto px-6">
       <div className="mb-16">
-        <h2 className="text-3xl font-semibold tracking-tight text-its-navy mb-4">
+        <h2 className="text-4xl font-bold tracking-tight text-white mb-4">
           {t('heading')}
         </h2>
-        <p className="text-base font-light text-its-muted max-w-2xl">
+        <p className="text-lg font-light text-gray-400 max-w-2xl">
           {t('subtitle')}
         </p>
       </div>

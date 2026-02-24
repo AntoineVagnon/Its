@@ -15,19 +15,19 @@ export function LanguageToggle({ className }: { className?: string }) {
   };
 
   return (
-    <div className={cn('flex items-center gap-2 text-xs font-medium text-its-muted', className)}>
+    <div className={cn('flex items-center gap-2 text-xs font-medium text-gray-400', className)}>
       {locale === 'bs' ? (
-        <span className="text-its-navy">BS</span>
+        <span className="text-white">BS</span>
       ) : (
-        <a href={switchedPath('bs')} className="hover:text-its-navy transition-colors">
+        <a href={switchedPath('bs')} className="hover:text-white transition-colors">
           BS
         </a>
       )}
       <span>|</span>
       {locale === 'en' ? (
-        <span className="text-its-navy">EN</span>
+        <span className="text-white">EN</span>
       ) : (
-        <a href={switchedPath('en')} className="hover:text-its-navy transition-colors">
+        <a href={switchedPath('en')} className="hover:text-white transition-colors">
           EN
         </a>
       )}

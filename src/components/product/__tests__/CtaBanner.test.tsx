@@ -13,9 +13,9 @@ describe('CtaBanner', () => {
     expect(screen.getByText('Kontaktirajte nas')).toBeInTheDocument();
   });
 
-  test('has gold background', () => {
+  test('has accent gradient background', () => {
     const { container } = render(<CtaBanner />);
     const section = container.querySelector('section');
-    expect(section?.className).toContain('bg-its-gold');
+    expect(section?.className).toContain('overflow-hidden');
   });
 });

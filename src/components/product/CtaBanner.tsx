@@ -8,12 +8,16 @@ export function CtaBanner() {
   const locale = useLocale();
 
   return (
-    <section className="bg-its-gold py-16">
-      <div className="max-w-4xl mx-auto px-6 text-center">
-        <h2 className="text-2xl md:text-3xl font-semibold tracking-tight text-its-navy mb-6">
+    <section className="relative py-20 overflow-hidden">
+      {/* Accent background */}
+      <div className="absolute inset-0 bg-gradient-to-r from-its-accent/10 via-its-accent/5 to-transparent" />
+      <div className="absolute inset-0 border-y border-its-accent/20" />
+
+      <div className="max-w-4xl mx-auto px-6 text-center relative z-10">
+        <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-white mb-6">
           {t('ctaBanner.heading')}
         </h2>
-        <Button variant="dark" href={`/${locale}/kontakt`}>
+        <Button href={`/${locale}/kontakt`}>
           {t('ctaBanner.cta')}
         </Button>
       </div>

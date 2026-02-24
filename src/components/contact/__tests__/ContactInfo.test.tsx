@@ -28,9 +28,9 @@ describe('ContactInfo', () => {
     expect(screen.getByText('Pon - Pet: 09:00 - 17:00')).toBeInTheDocument();
   });
 
-  test('renders 4 icon circles', () => {
+  test('renders 4 icon containers', () => {
     const { container } = render(<ContactInfo />);
-    const icons = container.querySelectorAll('.rounded-full.bg-gray-50');
+    const icons = container.querySelectorAll('[class*="rounded-xl"][class*="bg-its-accent"]');
     expect(icons.length).toBe(4);
   });
 });

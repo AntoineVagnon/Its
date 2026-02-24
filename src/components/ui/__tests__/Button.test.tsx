@@ -6,7 +6,7 @@ describe('Button', () => {
   test('renders primary variant with gold background classes', () => {
     render(<Button>Click me</Button>);
     const btn = screen.getByRole('button', { name: 'Click me' });
-    expect(btn.className).toContain('bg-its-gold');
+    expect(btn.className).toContain('bg-its-accent');
   });
 
   test('renders ghost variant with border classes', () => {
@@ -19,7 +19,7 @@ describe('Button', () => {
   test('renders link variant with blue text', () => {
     render(<Button variant="link">Link</Button>);
     const btn = screen.getByRole('button', { name: 'Link' });
-    expect(btn.className).toContain('text-its-blue');
+    expect(btn.className).toContain('text-its-accent');
   });
 
   test('renders as <a> when href provided', () => {
