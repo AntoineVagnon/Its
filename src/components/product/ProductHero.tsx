@@ -33,7 +33,7 @@ export function ProductHero() {
               {t('description')}
             </p>
             <div className="flex gap-4">
-              <Button variant="ghost" href="#">
+              <Button variant="ghost" href={`/${locale}/kontakt`}>
                 {t('ctaDemo')}
               </Button>
               <Button href={`/${locale}/kontakt`}>

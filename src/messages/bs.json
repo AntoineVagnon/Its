@@ -4,7 +4,7 @@
     "nav": {
       "home": "Početna",
       "products": "Proizvodi",
-      "services": "Usluge",
+
       "about": "O nama",
       "contact": "Kontakt"
     },
@@ -75,7 +75,6 @@
   },
   "News": {
     "heading": "Najnovije vijesti",
-    "allNews": "Sve vijesti",
     "items": {
       "news1": {
         "date": "12. Maj 2025",

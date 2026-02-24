@@ -4,7 +4,7 @@
     "nav": {
       "home": "Home",
       "products": "Products",
-      "services": "Services",
+
       "about": "About",
       "contact": "Contact"
     },
@@ -75,7 +75,6 @@
   },
   "News": {
     "heading": "Latest news",
-    "allNews": "All news",
     "items": {
       "news1": {
         "date": "May 12, 2025",

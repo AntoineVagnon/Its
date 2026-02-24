@@ -29,7 +29,7 @@ export function ProductGrid() {
               title={t(`items.${product.id}.title`)}
               description={t(`items.${product.id}.description`)}
               linkText={t('learnMore')}
-              href={product.href === '#' ? '#' : `/${locale}${product.href}`}
+              href={`/${locale}${product.href}`}
             />
           </ScrollReveal>
         ))}
