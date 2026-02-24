@@ -100,8 +100,8 @@
     "breadcrumb": {
       "home": "Početna",
       "products": "Proizvodi",
-      "geodezija": "Geodezija",
-      "geodet": "Geodet"
+      "category": "Geodezija",
+      "current": "Geodet"
     },
     "category": "Geodezija",
     "heading": "Geodet",
@@ -110,15 +110,15 @@
     "ctaDemo": "Preuzmite demo",
     "ctaQuote": "Zatražite ponudu",
     "features": {
-      "instruments": {
+      "f1": {
         "title": "Podrška za instrumente",
         "description": "Besprekorna integracija za Topcon, Leica, Sokkia, Trimble, Nikon i Ruide uređaje."
       },
-      "forms": {
+      "f2": {
         "title": "Automatski obrasci",
         "description": "Generisanje obrazaca TZ, O1i2, O1v, O8, O25 direktno u Excel formatu."
       },
-      "cad": {
+      "f3": {
         "title": "CAD Integracija",
         "description": "Eksport u AutoCAD, ZWCAD, BricsCAD, MicroStation i Google Earth."
       }
@@ -132,23 +132,298 @@
         "name": "Standard",
         "price": "1.000 €",
         "features": {
-          "basicFeatures": "Osnovne funkcionalnosti aplikacije",
-          "coordinateTransformation": "Modul za transformaciju koordinata",
-          "usbHardlock": "USB HardLock zaštita"
+          "f1": "Osnovne funkcionalnosti aplikacije",
+          "f2": "Modul za transformaciju koordinata",
+          "f3": "USB HardLock zaštita"
         }
       },
       "premium": {
         "name": "Premium",
         "price": "1.200 €",
         "features": {
-          "allStandard": "Sve iz Standard paketa",
-          "gpsModule": "GPS Modul za izvještaje",
-          "googleEarthKml": "Google Earth KML eksport modul"
+          "f1": "Sve iz Standard paketa",
+          "f2": "GPS Modul za izvještaje",
+          "f3": "Google Earth KML eksport modul"
         }
       }
     },
     "ctaBanner": {
       "heading": "Spremni da modernizirate vaše geodetske procese?",
+      "cta": "Kontaktirajte nas"
+    }
+  },
+  "GeodetProfili": {
+    "breadcrumb": {
+      "home": "Početna",
+      "products": "Proizvodi",
+      "category": "Geodezija",
+      "current": "Geodet Profili"
+    },
+    "category": "Geodezija",
+    "heading": "Geodet Profili",
+    "description": "Specijalizovana aplikacija za vizualizaciju i iscrtavanje geodetskih profila terena. Fleksibilan import podataka iz različitih izvora uz profesionalno generisanje profila.",
+    "ctaDemo": "Preuzmite demo",
+    "ctaQuote": "Zatražite ponudu",
+    "features": {
+      "f1": {
+        "title": "Vizualizacija profila",
+        "description": "Generisanje uzdužnih i poprečnih profila terena sa automatskim kotiranjem i legendom."
+      },
+      "f2": {
+        "title": "Fleksibilan import",
+        "description": "Podrška za uvoz podataka iz Geodet aplikacije, ASCII fajlova, te Topcon i Leica formata."
+      },
+      "f3": {
+        "title": "Eksport rezultata",
+        "description": "Izvoz profila u DXF, PDF i Excel formate za dalju obradu i prezentaciju."
+      }
+    },
+    "pricing": {
+      "heading": "Odaberite paket",
+      "subtitle": "Fleksibilne opcije licenciranja, uz mogućnost količinskog popusta.",
+      "perLicense": "/ licenca",
+      "recommended": "Preporučeno",
+      "standard": {
+        "name": "Standard",
+        "price": "600 €",
+        "features": {
+          "f1": "Uzdužni i poprečni profili",
+          "f2": "ASCII import podataka",
+          "f3": "USB HardLock zaštita"
+        }
+      },
+      "premium": {
+        "name": "Premium",
+        "price": "800 €",
+        "features": {
+          "f1": "Sve iz Standard paketa",
+          "f2": "Integracija sa Geodet aplikacijom",
+          "f3": "DXF i PDF eksport moduli"
+        }
+      }
+    },
+    "ctaBanner": {
+      "heading": "Spremni za profesionalne geodetske profile?",
+      "cta": "Kontaktirajte nas"
+    }
+  },
+  "ProMan": {
+    "breadcrumb": {
+      "home": "Početna",
+      "products": "Proizvodi",
+      "category": "Dokumenti",
+      "current": "ProMan"
+    },
+    "category": "Dokumenti",
+    "heading": "ProMan",
+    "description": "Elektronski protokol i sistem za upravljanje dokumentima. Centralizujte arhivu, automatizujte poslovne procese i pratite tok dokumenata u realnom vremenu.",
+    "ctaDemo": "Preuzmite demo",
+    "ctaQuote": "Zatražite ponudu",
+    "features": {
+      "f1": {
+        "title": "Elektronski protokol",
+        "description": "Automatsko zavođenje, klasifikacija i praćenje dokumenata sa jedinstvenim brojem protokola."
+      },
+      "f2": {
+        "title": "Centralna arhiva",
+        "description": "Digitalna arhiva svih dokumenata sa naprednom pretragom po sadržaju, datumu i kategoriji."
+      },
+      "f3": {
+        "title": "Upravljanje procesima",
+        "description": "Definisanje tokova rada, automatske notifikacije i praćenje statusa zadataka u timu."
+      }
+    },
+    "pricing": {
+      "heading": "Odaberite paket",
+      "subtitle": "Licenciranje po korisniku sa mogućnošću prilagodbe.",
+      "perLicense": "/ korisnik",
+      "recommended": "Preporučeno",
+      "standard": {
+        "name": "Standard",
+        "price": "800 €",
+        "features": {
+          "f1": "Elektronski protokol",
+          "f2": "Pretraga i klasifikacija",
+          "f3": "Do 5 korisnika"
+        }
+      },
+      "premium": {
+        "name": "Enterprise",
+        "price": "1.500 €",
+        "features": {
+          "f1": "Sve iz Standard paketa",
+          "f2": "Neograničen broj korisnika",
+          "f3": "Upravljanje tokovima rada"
+        }
+      }
+    },
+    "ctaBanner": {
+      "heading": "Spremni da digitalizirate upravljanje dokumentima?",
+      "cta": "Kontaktirajte nas"
+    }
+  },
+  "DkvPro": {
+    "breadcrumb": {
+      "home": "Početna",
+      "products": "Proizvodi",
+      "category": "Dalekovodi",
+      "current": "DKV-PRO"
+    },
+    "category": "Dalekovodi",
+    "heading": "DKV-PRO",
+    "description": "Profesionalni softverski paket za projektovanje dalekovoda i nadzemnih vodova. Elektromehanički proračuni, profilisanje trase i generisanje tehničke dokumentacije.",
+    "ctaDemo": "Preuzmite demo",
+    "ctaQuote": "Zatražite ponudu",
+    "features": {
+      "f1": {
+        "title": "Elektromehanički proračuni",
+        "description": "Automatski proračuni mehaničkog naprezanja, ugiba vodiča i zaštitnih užadi prema standardima."
+      },
+      "f2": {
+        "title": "Profilisanje trase",
+        "description": "Vizualizacija i optimizacija trase dalekovoda sa automatskim pozicioniranjem stubova."
+      },
+      "f3": {
+        "title": "Tehnička dokumentacija",
+        "description": "Generisanje kompletne projektne dokumentacije, montažnih tabela i specifikacija materijala."
+      }
+    },
+    "pricing": {
+      "heading": "Odaberite paket",
+      "subtitle": "Profesionalno licenciranje za projektantske timove.",
+      "perLicense": "/ licenca",
+      "recommended": "Preporučeno",
+      "standard": {
+        "name": "Standard",
+        "price": "2.000 €",
+        "features": {
+          "f1": "Elektromehanički proračuni",
+          "f2": "Profilisanje trase",
+          "f3": "USB HardLock zaštita"
+        }
+      },
+      "premium": {
+        "name": "Professional",
+        "price": "3.500 €",
+        "features": {
+          "f1": "Sve iz Standard paketa",
+          "f2": "Automatska dokumentacija",
+          "f3": "Multi-naponski nivoi (35–400 kV)"
+        }
+      }
+    },
+    "ctaBanner": {
+      "heading": "Spremni za profesionalno projektovanje dalekovoda?",
+      "cta": "Kontaktirajte nas"
+    }
+  },
+  "Ervip": {
+    "breadcrumb": {
+      "home": "Početna",
+      "products": "Proizvodi",
+      "category": "Evidencije",
+      "current": "ERVIP"
+    },
+    "category": "Evidencije",
+    "heading": "ERVIP",
+    "description": "Kompletno rješenje za evidenciju radnog vremena i kontrolu pristupa. Biometrijska identifikacija, automatski obračun sati i integracija sa sistemima obračuna plata.",
+    "ctaDemo": "Preuzmite demo",
+    "ctaQuote": "Zatražite ponudu",
+    "features": {
+      "f1": {
+        "title": "Biometrijska evidencija",
+        "description": "Podrška za otisak prsta, karticu i PIN kod sa trenutnom identifikacijom zaposlenika."
+      },
+      "f2": {
+        "title": "Automatski obračun",
+        "description": "Obračun redovnih sati, prekovremenog rada, noćnog rada i godišnjih odmora."
+      },
+      "f3": {
+        "title": "Kontrola pristupa",
+        "description": "Upravljanje zonama pristupa, vremenskim rasporedima i sigurnosnim nivoima."
+      }
+    },
+    "pricing": {
+      "heading": "Odaberite paket",
+      "subtitle": "Cijena ovisi o broju terminala i zaposlenika.",
+      "perLicense": "/ terminal",
+      "recommended": "Preporučeno",
+      "standard": {
+        "name": "Standard",
+        "price": "1.200 €",
+        "features": {
+          "f1": "1 terminal za evidenciju",
+          "f2": "Do 50 zaposlenika",
+          "f3": "Osnovni izvještaji"
+        }
+      },
+      "premium": {
+        "name": "Enterprise",
+        "price": "2.500 €",
+        "features": {
+          "f1": "Sve iz Standard paketa",
+          "f2": "Neograničen broj terminala",
+          "f3": "Kontrola pristupa i integracija"
+        }
+      }
+    },
+    "ctaBanner": {
+      "heading": "Spremni da automatizirate evidenciju radnog vremena?",
+      "cta": "Kontaktirajte nas"
+    }
+  },
+  "HelpDesk": {
+    "breadcrumb": {
+      "home": "Početna",
+      "products": "Proizvodi",
+      "category": "Podrška",
+      "current": "Help Desk"
+    },
+    "category": "Podrška",
+    "heading": "Help Desk",
+    "description": "Online ticketing sistem za efikasnu tehničku podršku i brigu o korisnicima. Pratite zahtjeve, upravljajte prioritetima i mjerite kvalitet usluge u realnom vremenu.",
+    "ctaDemo": "Preuzmite demo",
+    "ctaQuote": "Zatražite ponudu",
+    "features": {
+      "f1": {
+        "title": "Ticketing sistem",
+        "description": "Kreiranje, praćenje i rješavanje zahtjeva sa automatskim dodjeljivanjem timu za podršku."
+      },
+      "f2": {
+        "title": "SLA upravljanje",
+        "description": "Definisanje nivoa usluge, automatske eskalacije i praćenje vremena odgovora."
+      },
+      "f3": {
+        "title": "Korisnički portal",
+        "description": "Web portal za korisnike sa bazom znanja, FAQ sekcijom i praćenjem statusa zahtjeva."
+      }
+    },
+    "pricing": {
+      "heading": "Odaberite paket",
+      "subtitle": "Licenciranje po agentu sa neograničenim brojem korisnika.",
+      "perLicense": "/ agent",
+      "recommended": "Preporučeno",
+      "standard": {
+        "name": "Standard",
+        "price": "500 €",
+        "features": {
+          "f1": "Do 3 agenta podrške",
+          "f2": "Email integracija",
+          "f3": "Osnovni izvještaji"
+        }
+      },
+      "premium": {
+        "name": "Professional",
+        "price": "1.000 €",
+        "features": {
+          "f1": "Sve iz Standard paketa",
+          "f2": "Neograničen broj agenata",
+          "f3": "SLA upravljanje i korisnički portal"
+        }
+      }
+    },
+    "ctaBanner": {
+      "heading": "Spremni da unaprijedite korisničku podršku?",
       "cta": "Kontaktirajte nas"
     }
   },

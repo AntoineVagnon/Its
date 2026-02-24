@@ -3,8 +3,12 @@
 import { useTranslations, useLocale } from 'next-intl';
 import { Button } from '@/components/ui/Button';
 
-export function CtaBanner() {
-  const t = useTranslations('Geodet');
+interface CtaBannerProps {
+  namespace?: string;
+}
+
+export function CtaBanner({ namespace = 'Geodet' }: CtaBannerProps) {
+  const t = useTranslations(namespace);
   const locale = useLocale();
 
   return (

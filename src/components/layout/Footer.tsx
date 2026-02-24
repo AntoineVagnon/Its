@@ -70,10 +70,10 @@ export function Footer() {
             <ul className="space-y-3">
               {([
                 { key: 'geodet', href: `/${locale}/proizvodi/geodet` },
-                { key: 'proman', href: `/${locale}/kontakt` },
-                { key: 'dkv', href: `/${locale}/kontakt` },
-                { key: 'ervip', href: `/${locale}/kontakt` },
-                { key: 'helpdesk', href: `/${locale}/kontakt` },
+                { key: 'proman', href: `/${locale}/proizvodi/proman` },
+                { key: 'dkv', href: `/${locale}/proizvodi/dkv-pro` },
+                { key: 'ervip', href: `/${locale}/proizvodi/ervip` },
+                { key: 'helpdesk', href: `/${locale}/proizvodi/help-desk` },
               ] as const).map((item) => (
                 <li key={item.key}>
                   <a href={item.href} className="text-sm font-light text-gray-400 hover:text-its-accent transition-colors">

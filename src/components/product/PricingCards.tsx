@@ -4,12 +4,15 @@ import { useTranslations, useLocale } from 'next-intl';
 import { Icon } from '@iconify/react';
 import { Button } from '@/components/ui/Button';
 
-export function PricingCards() {
-  const t = useTranslations('Geodet');
-  const locale = useLocale();
+const pricingFeatureKeys = ['f1', 'f2', 'f3'] as const;
 
-  const standardFeatures = ['basicFeatures', 'coordinateTransformation', 'usbHardlock'] as const;
-  const premiumFeatures = ['allStandard', 'gpsModule', 'googleEarthKml'] as const;
+interface PricingCardsProps {
+  namespace?: string;
+}
+
+export function PricingCards({ namespace = 'Geodet' }: PricingCardsProps) {
+  const t = useTranslations(namespace);
+  const locale = useLocale();
 
   return (
     <div className="max-w-4xl mx-auto px-6 pb-24">
@@ -36,7 +39,7 @@ export function PricingCards() {
             </span>
           </div>
           <ul className="space-y-4 mb-8 flex-1">
-            {standardFeatures.map((key) => (
+            {pricingFeatureKeys.map((key) => (
               <li key={key} className="flex items-start gap-3 text-sm font-light text-gray-300">
                 <Icon icon="solar:check-circle-linear" className="text-its-accent mt-0.5 shrink-0" width={18} />
                 {t(`pricing.standard.features.${key}`)}
@@ -65,7 +68,7 @@ export function PricingCards() {
             </span>
           </div>
           <ul className="space-y-4 mb-8 flex-1">
-            {premiumFeatures.map((key, i) => (
+            {pricingFeatureKeys.map((key, i) => (
               <li
                 key={key}
                 className={`flex items-start gap-3 text-sm ${i === 0 ? 'font-light text-gray-300' : 'font-medium text-white'}`}

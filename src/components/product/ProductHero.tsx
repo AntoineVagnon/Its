@@ -3,8 +3,12 @@
 import { useTranslations, useLocale } from 'next-intl';
 import { Button } from '@/components/ui/Button';
 
-export function ProductHero() {
-  const t = useTranslations('Geodet');
+interface ProductHeroProps {
+  namespace?: string;
+}
+
+export function ProductHero({ namespace = 'Geodet' }: ProductHeroProps) {
+  const t = useTranslations(namespace);
   const locale = useLocale();
 
   return (
@@ -31,7 +35,7 @@ export function ProductHero() {
             {t('breadcrumb.products')}
           </a>
           <span>/</span>
-          <span className="text-its-accent">{t('breadcrumb.geodezija')}</span>
+          <span className="text-its-accent">{t('breadcrumb.category')}</span>
         </div>
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
@@ -86,12 +90,12 @@ export function ProductHero() {
               </div>
               <div className="mt-5 grid grid-cols-2 gap-3">
                 <div className="bg-its-accent/10 rounded-xl p-4 border border-its-accent/20">
-                  <div className="text-xs text-gray-500 mb-1">Standard</div>
-                  <div className="text-lg font-bold text-its-accent">1,000 &euro;</div>
+                  <div className="text-xs text-gray-500 mb-1">{t('pricing.standard.name')}</div>
+                  <div className="text-lg font-bold text-its-accent">{t('pricing.standard.price')}</div>
                 </div>
                 <div className="bg-white/5 rounded-xl p-4 border border-white/10">
-                  <div className="text-xs text-gray-500 mb-1">Premium</div>
-                  <div className="text-lg font-bold text-white">1,200 &euro;</div>
+                  <div className="text-xs text-gray-500 mb-1">{t('pricing.premium.name')}</div>
+                  <div className="text-lg font-bold text-white">{t('pricing.premium.price')}</div>
                 </div>
               </div>
             </div>

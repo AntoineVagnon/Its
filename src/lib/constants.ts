@@ -21,31 +21,31 @@ export const PRODUCTS = [
     id: 'geodet-profili',
     icon: 'solar:graph-up-linear',
     categoryKey: 'geodezija',
-    href: '/kontakt',
+    href: '/proizvodi/geodet-profili',
   },
   {
     id: 'proman',
     icon: 'solar:document-text-linear',
     categoryKey: 'dokumenti',
-    href: '/kontakt',
+    href: '/proizvodi/proman',
   },
   {
     id: 'dkv-pro',
     icon: 'solar:bolt-linear',
     categoryKey: 'dalekovodi',
-    href: '/kontakt',
+    href: '/proizvodi/dkv-pro',
   },
   {
     id: 'ervip',
     icon: 'solar:clock-circle-linear',
     categoryKey: 'evidencije',
-    href: '/kontakt',
+    href: '/proizvodi/ervip',
   },
   {
     id: 'help-desk',
     icon: 'solar:headphones-round-linear',
     categoryKey: 'podrska',
-    href: '/kontakt',
+    href: '/proizvodi/help-desk',
   },
 ];
 

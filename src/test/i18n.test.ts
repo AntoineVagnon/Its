@@ -37,14 +37,14 @@ describe('i18n routing', () => {
 
 describe('Translation files', () => {
   test('bs.json is valid JSON and has all required namespaces', () => {
-    const namespaces = ['Header', 'Hero', 'Products', 'WhyUs', 'News', 'Geodet', 'Contact', 'Footer', 'SocialProof'];
+    const namespaces = ['Header', 'Hero', 'Products', 'WhyUs', 'News', 'Geodet', 'GeodetProfili', 'ProMan', 'DkvPro', 'Ervip', 'HelpDesk', 'Contact', 'Footer', 'SocialProof'];
     for (const ns of namespaces) {
       expect(bs).toHaveProperty(ns);
     }
   });
 
   test('en.json is valid JSON and has all required namespaces', () => {
-    const namespaces = ['Header', 'Hero', 'Products', 'WhyUs', 'News', 'Geodet', 'Contact', 'Footer', 'SocialProof'];
+    const namespaces = ['Header', 'Hero', 'Products', 'WhyUs', 'News', 'Geodet', 'GeodetProfili', 'ProMan', 'DkvPro', 'Ervip', 'HelpDesk', 'Contact', 'Footer', 'SocialProof'];
     for (const ns of namespaces) {
       expect(en).toHaveProperty(ns);
     }

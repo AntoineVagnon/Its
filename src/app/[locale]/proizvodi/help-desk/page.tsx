@@ -13,14 +13,14 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: 'Geodet' });
+  const t = await getTranslations({ locale, namespace: 'HelpDesk' });
   return {
     title: `${t('heading')} | iT Systems`,
     description: t('description'),
   };
 }
 
-export default async function GeodetPage({
+export default async function HelpDeskPage({
   params,
 }: {
   params: Promise<{ locale: string }>;
@@ -32,10 +32,10 @@ export default async function GeodetPage({
     <>
       <Header />
       <main>
-        <ProductHero namespace="Geodet" />
-        <ValueProps namespace="Geodet" />
-        <PricingCards namespace="Geodet" />
-        <CtaBanner namespace="Geodet" />
+        <ProductHero namespace="HelpDesk" />
+        <ValueProps namespace="HelpDesk" />
+        <PricingCards namespace="HelpDesk" />
+        <CtaBanner namespace="HelpDesk" />
       </main>
       <Footer />
     </>

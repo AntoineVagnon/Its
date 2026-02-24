@@ -100,8 +100,8 @@
     "breadcrumb": {
       "home": "Home",
       "products": "Products",
-      "geodezija": "Geodesy",
-      "geodet": "Geodet"
+      "category": "Geodesy",
+      "current": "Geodet"
     },
     "category": "Geodesy",
     "heading": "Geodet",
@@ -110,15 +110,15 @@
     "ctaDemo": "Download demo",
     "ctaQuote": "Request a Quote",
     "features": {
-      "instruments": {
+      "f1": {
         "title": "Instrument support",
         "description": "Seamless integration for Topcon, Leica, Sokkia, Trimble, Nikon, and Ruide devices."
       },
-      "forms": {
+      "f2": {
         "title": "Automatic forms",
         "description": "Generate TZ, O1i2, O1v, O8, O25 forms directly in Excel format."
       },
-      "cad": {
+      "f3": {
         "title": "CAD Integration",
         "description": "Export to AutoCAD, ZWCAD, BricsCAD, MicroStation, and Google Earth."
       }
@@ -132,23 +132,298 @@
         "name": "Standard",
         "price": "1,000 €",
         "features": {
-          "basicFeatures": "Core application features",
-          "coordinateTransformation": "Coordinate transformation module",
-          "usbHardlock": "USB HardLock protection"
+          "f1": "Core application features",
+          "f2": "Coordinate transformation module",
+          "f3": "USB HardLock protection"
         }
       },
       "premium": {
         "name": "Premium",
         "price": "1,200 €",
         "features": {
-          "allStandard": "Everything in Standard",
-          "gpsModule": "GPS Module for reports",
-          "googleEarthKml": "Google Earth KML export module"
+          "f1": "Everything in Standard",
+          "f2": "GPS Module for reports",
+          "f3": "Google Earth KML export module"
         }
       }
     },
     "ctaBanner": {
       "heading": "Ready to modernize your geodetic processes?",
+      "cta": "Contact us"
+    }
+  },
+  "GeodetProfili": {
+    "breadcrumb": {
+      "home": "Home",
+      "products": "Products",
+      "category": "Geodesy",
+      "current": "Geodet Profiles"
+    },
+    "category": "Geodesy",
+    "heading": "Geodet Profiles",
+    "description": "Specialized application for visualization and drawing of geodetic terrain profiles. Flexible data import from various sources with professional profile generation.",
+    "ctaDemo": "Download demo",
+    "ctaQuote": "Request a Quote",
+    "features": {
+      "f1": {
+        "title": "Profile visualization",
+        "description": "Generation of longitudinal and cross profiles with automatic dimensioning and legend."
+      },
+      "f2": {
+        "title": "Flexible import",
+        "description": "Support for data import from Geodet application, ASCII files, and Topcon and Leica formats."
+      },
+      "f3": {
+        "title": "Result export",
+        "description": "Export profiles to DXF, PDF, and Excel formats for further processing and presentation."
+      }
+    },
+    "pricing": {
+      "heading": "Choose your plan",
+      "subtitle": "Flexible licensing options with volume discounts available.",
+      "perLicense": "/ license",
+      "recommended": "Recommended",
+      "standard": {
+        "name": "Standard",
+        "price": "600 €",
+        "features": {
+          "f1": "Longitudinal and cross profiles",
+          "f2": "ASCII data import",
+          "f3": "USB HardLock protection"
+        }
+      },
+      "premium": {
+        "name": "Premium",
+        "price": "800 €",
+        "features": {
+          "f1": "Everything in Standard",
+          "f2": "Geodet application integration",
+          "f3": "DXF and PDF export modules"
+        }
+      }
+    },
+    "ctaBanner": {
+      "heading": "Ready for professional geodetic profiles?",
+      "cta": "Contact us"
+    }
+  },
+  "ProMan": {
+    "breadcrumb": {
+      "home": "Home",
+      "products": "Products",
+      "category": "Documents",
+      "current": "ProMan"
+    },
+    "category": "Documents",
+    "heading": "ProMan",
+    "description": "Electronic protocol and document management system. Centralize your archive, automate business processes, and track document flow in real time.",
+    "ctaDemo": "Download demo",
+    "ctaQuote": "Request a Quote",
+    "features": {
+      "f1": {
+        "title": "Electronic protocol",
+        "description": "Automatic registration, classification, and tracking of documents with unique protocol numbers."
+      },
+      "f2": {
+        "title": "Central archive",
+        "description": "Digital archive of all documents with advanced search by content, date, and category."
+      },
+      "f3": {
+        "title": "Process management",
+        "description": "Define workflows, automatic notifications, and track task status across your team."
+      }
+    },
+    "pricing": {
+      "heading": "Choose your plan",
+      "subtitle": "Per-user licensing with customization options.",
+      "perLicense": "/ user",
+      "recommended": "Recommended",
+      "standard": {
+        "name": "Standard",
+        "price": "800 €",
+        "features": {
+          "f1": "Electronic protocol",
+          "f2": "Search and classification",
+          "f3": "Up to 5 users"
+        }
+      },
+      "premium": {
+        "name": "Enterprise",
+        "price": "1,500 €",
+        "features": {
+          "f1": "Everything in Standard",
+          "f2": "Unlimited users",
+          "f3": "Workflow management"
+        }
+      }
+    },
+    "ctaBanner": {
+      "heading": "Ready to digitize your document management?",
+      "cta": "Contact us"
+    }
+  },
+  "DkvPro": {
+    "breadcrumb": {
+      "home": "Home",
+      "products": "Products",
+      "category": "Power Lines",
+      "current": "DKV-PRO"
+    },
+    "category": "Power Lines",
+    "heading": "DKV-PRO",
+    "description": "Professional software package for power line and overhead line design. Electromechanical calculations, route profiling, and technical documentation generation.",
+    "ctaDemo": "Download demo",
+    "ctaQuote": "Request a Quote",
+    "features": {
+      "f1": {
+        "title": "Electromechanical calculations",
+        "description": "Automatic calculations of mechanical stress, conductor sag, and ground wire per standards."
+      },
+      "f2": {
+        "title": "Route profiling",
+        "description": "Visualization and optimization of power line routes with automatic tower positioning."
+      },
+      "f3": {
+        "title": "Technical documentation",
+        "description": "Generation of complete project documentation, assembly tables, and material specifications."
+      }
+    },
+    "pricing": {
+      "heading": "Choose your plan",
+      "subtitle": "Professional licensing for engineering teams.",
+      "perLicense": "/ license",
+      "recommended": "Recommended",
+      "standard": {
+        "name": "Standard",
+        "price": "2,000 €",
+        "features": {
+          "f1": "Electromechanical calculations",
+          "f2": "Route profiling",
+          "f3": "USB HardLock protection"
+        }
+      },
+      "premium": {
+        "name": "Professional",
+        "price": "3,500 €",
+        "features": {
+          "f1": "Everything in Standard",
+          "f2": "Automatic documentation",
+          "f3": "Multi-voltage levels (35–400 kV)"
+        }
+      }
+    },
+    "ctaBanner": {
+      "heading": "Ready for professional power line design?",
+      "cta": "Contact us"
+    }
+  },
+  "Ervip": {
+    "breadcrumb": {
+      "home": "Home",
+      "products": "Products",
+      "category": "Records",
+      "current": "ERVIP"
+    },
+    "category": "Records",
+    "heading": "ERVIP",
+    "description": "Complete solution for time tracking and access control. Biometric identification, automatic hour calculation, and payroll system integration.",
+    "ctaDemo": "Download demo",
+    "ctaQuote": "Request a Quote",
+    "features": {
+      "f1": {
+        "title": "Biometric tracking",
+        "description": "Support for fingerprint, card, and PIN code with instant employee identification."
+      },
+      "f2": {
+        "title": "Automatic calculation",
+        "description": "Calculation of regular hours, overtime, night shifts, and annual leave."
+      },
+      "f3": {
+        "title": "Access control",
+        "description": "Management of access zones, time schedules, and security levels."
+      }
+    },
+    "pricing": {
+      "heading": "Choose your plan",
+      "subtitle": "Price depends on the number of terminals and employees.",
+      "perLicense": "/ terminal",
+      "recommended": "Recommended",
+      "standard": {
+        "name": "Standard",
+        "price": "1,200 €",
+        "features": {
+          "f1": "1 tracking terminal",
+          "f2": "Up to 50 employees",
+          "f3": "Basic reports"
+        }
+      },
+      "premium": {
+        "name": "Enterprise",
+        "price": "2,500 €",
+        "features": {
+          "f1": "Everything in Standard",
+          "f2": "Unlimited terminals",
+          "f3": "Access control and integration"
+        }
+      }
+    },
+    "ctaBanner": {
+      "heading": "Ready to automate your time tracking?",
+      "cta": "Contact us"
+    }
+  },
+  "HelpDesk": {
+    "breadcrumb": {
+      "home": "Home",
+      "products": "Products",
+      "category": "Support",
+      "current": "Help Desk"
+    },
+    "category": "Support",
+    "heading": "Help Desk",
+    "description": "Online ticketing system for efficient technical support and customer care. Track requests, manage priorities, and measure service quality in real time.",
+    "ctaDemo": "Download demo",
+    "ctaQuote": "Request a Quote",
+    "features": {
+      "f1": {
+        "title": "Ticketing system",
+        "description": "Create, track, and resolve requests with automatic assignment to the support team."
+      },
+      "f2": {
+        "title": "SLA management",
+        "description": "Define service levels, automatic escalations, and response time tracking."
+      },
+      "f3": {
+        "title": "Customer portal",
+        "description": "Web portal for users with a knowledge base, FAQ section, and request status tracking."
+      }
+    },
+    "pricing": {
+      "heading": "Choose your plan",
+      "subtitle": "Per-agent licensing with unlimited end users.",
+      "perLicense": "/ agent",
+      "recommended": "Recommended",
+      "standard": {
+        "name": "Standard",
+        "price": "500 €",
+        "features": {
+          "f1": "Up to 3 support agents",
+          "f2": "Email integration",
+          "f3": "Basic reports"
+        }
+      },
+      "premium": {
+        "name": "Professional",
+        "price": "1,000 €",
+        "features": {
+          "f1": "Everything in Standard",
+          "f2": "Unlimited agents",
+          "f3": "SLA management and customer portal"
+        }
+      }
+    },
+    "ctaBanner": {
+      "heading": "Ready to improve your customer support?",
       "cta": "Contact us"
     }
   },
