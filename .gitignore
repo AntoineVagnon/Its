@@ -32,3 +32,14 @@ test-results/
 playwright-report/
 
 .vercel
+
+# generated / local tooling
+screenshots/
+nul
+src/nul
+CLAUDE.md
+CLAUDE.template.md
+README.md
+add-playwright-mcp.ps1
+Positioning\ Frameworks\ Guide.md
+.claude/
