@@ -88,7 +88,7 @@ describe('ContactForm', () => {
     expect(screen.queryByTestId('success-message')).not.toBeInTheDocument();
   });
 
-  test('shows success message after valid submission with all required fields', async () => {
+  test('shows fallback error with contact info when Formspree is not configured', async () => {
     const user = userEvent.setup();
     render(<ContactForm />);
 
@@ -101,24 +101,9 @@ describe('ContactForm', () => {
 
     await user.click(screen.getByText('Pošaljite poruku'));
 
-    expect(screen.getByTestId('success-message')).toBeInTheDocument();
-  });
-
-  test('success message contains "Hvala" and "24 sata"', async () => {
-    const user = userEvent.setup();
-    render(<ContactForm />);
-
-    await user.type(screen.getByPlaceholderText('Unesite vaše ime'), 'Test User');
-    await user.type(screen.getByPlaceholderText('vas@email.com'), 'test@test.com');
-    await user.type(screen.getByPlaceholderText('Kako vam možemo pomoći?'), 'Test message');
-
-    const checkbox = screen.getByRole('checkbox');
-    await user.click(checkbox);
-
-    await user.click(screen.getByText('Pošaljite poruku'));
-
-    expect(screen.getByText(/Hvala/)).toBeInTheDocument();
-    expect(screen.getByText(/24 sata/)).toBeInTheDocument();
+    const alerts = screen.getAllByRole('alert');
+    expect(alerts.some((el) => el.textContent?.includes('info@its.ba'))).toBe(true);
+    expect(screen.queryByTestId('success-message')).not.toBeInTheDocument();
   });
 
   describe('with Formspree configured', () => {

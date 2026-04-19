@@ -46,7 +46,7 @@ export function ContactForm() {
 
     const FORMSPREE_ENDPOINT = getFormspreeEndpoint();
     if (!FORMSPREE_ENDPOINT) {
-      setSubmitted(true);
+      setSubmitError(true);
       return;
     }
 
