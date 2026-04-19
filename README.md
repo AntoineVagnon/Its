@@ -57,6 +57,19 @@ vercel --prod
 
 Set in Vercel dashboard → Project → Settings → Environment Variables.
 
+## Product Pages
+
+| Slug | Product |
+|------|---------|
+| `geodet` | Geodet — geodetic survey software |
+| `geodet-profili` | Geodet Profili — cross-section profiles |
+| `dkv-pro` | DKV Pro — document & contract management |
+| `ervip` | ERVIP — road infrastructure register |
+| `help-desk` | Help Desk — internal IT ticketing |
+| `proman` | ProMan — project management |
+
+All pages live at `/bs/proizvodi/<slug>/` and `/en/proizvodi/<slug>/`.
+
 ## Adding a Product Page
 
 1. Add translations under `Products.<key>` in `src/messages/bs.json` and `en.json`
