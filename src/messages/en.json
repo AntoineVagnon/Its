@@ -448,6 +448,8 @@
       "messagePlaceholder": "How can we help you?",
       "privacy": "I agree that iT Systems may contact me regarding my inquiry in accordance with the Privacy Policy.",
       "submit": "Send message",
+      "submitting": "Sending...",
+      "submitError": "Error sending message. Please try again or contact us at info@its.ba.",
       "recaptcha": "This site is protected by reCAPTCHA v3.",
       "validationRequired": "This field is required.",
       "validationEmail": "Please enter a valid email address."

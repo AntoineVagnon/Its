@@ -1,4 +1,4 @@
-import { describe, test, expect } from 'vitest';
+import { describe, test, expect, vi, beforeEach, afterEach } from 'vitest';
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { ContactForm } from '../ContactForm';
@@ -58,12 +58,13 @@ describe('ContactForm', () => {
     expect(alerts.length).toBeGreaterThanOrEqual(1);
   });
 
-  test('shows validation error when submitting without privacy consent', async () => {
+  test('shows validation error when submitting without message', async () => {
     const user = userEvent.setup();
     render(<ContactForm />);
 
     await user.type(screen.getByPlaceholderText('Unesite vaše ime'), 'Test User');
     await user.type(screen.getByPlaceholderText('vas@email.com'), 'test@test.com');
+    await user.click(screen.getByRole('checkbox'));
 
     await user.click(screen.getByText('Pošaljite poruku'));
 
@@ -72,12 +73,28 @@ describe('ContactForm', () => {
     expect(screen.queryByTestId('success-message')).not.toBeInTheDocument();
   });
 
-  test('shows success message after valid submission with privacy consent', async () => {
+  test('shows validation error when submitting without privacy consent', async () => {
     const user = userEvent.setup();
     render(<ContactForm />);
 
     await user.type(screen.getByPlaceholderText('Unesite vaše ime'), 'Test User');
     await user.type(screen.getByPlaceholderText('vas@email.com'), 'test@test.com');
+    await user.type(screen.getByPlaceholderText('Kako vam možemo pomoći?'), 'Test message');
+
+    await user.click(screen.getByText('Pošaljite poruku'));
+
+    const alerts = screen.getAllByRole('alert');
+    expect(alerts.length).toBeGreaterThanOrEqual(1);
+    expect(screen.queryByTestId('success-message')).not.toBeInTheDocument();
+  });
+
+  test('shows success message after valid submission with all required fields', async () => {
+    const user = userEvent.setup();
+    render(<ContactForm />);
+
+    await user.type(screen.getByPlaceholderText('Unesite vaše ime'), 'Test User');
+    await user.type(screen.getByPlaceholderText('vas@email.com'), 'test@test.com');
+    await user.type(screen.getByPlaceholderText('Kako vam možemo pomoći?'), 'Test message');
 
     const checkbox = screen.getByRole('checkbox');
     await user.click(checkbox);
@@ -93,6 +110,7 @@ describe('ContactForm', () => {
 
     await user.type(screen.getByPlaceholderText('Unesite vaše ime'), 'Test User');
     await user.type(screen.getByPlaceholderText('vas@email.com'), 'test@test.com');
+    await user.type(screen.getByPlaceholderText('Kako vam možemo pomoći?'), 'Test message');
 
     const checkbox = screen.getByRole('checkbox');
     await user.click(checkbox);
@@ -101,5 +119,54 @@ describe('ContactForm', () => {
 
     expect(screen.getByText(/Hvala/)).toBeInTheDocument();
     expect(screen.getByText(/24 sata/)).toBeInTheDocument();
+  });
+
+  describe('with Formspree configured', () => {
+    beforeEach(() => {
+      vi.stubEnv('NEXT_PUBLIC_FORMSPREE_ID', 'test123');
+    });
+
+    afterEach(() => {
+      vi.unstubAllEnvs();
+      vi.restoreAllMocks();
+    });
+
+    test('calls Formspree endpoint on valid submission', async () => {
+      const mockFetch = vi.fn().mockResolvedValue({ ok: true } as Response);
+      vi.stubGlobal('fetch', mockFetch);
+
+      const user = userEvent.setup();
+      render(<ContactForm />);
+
+      await user.type(screen.getByPlaceholderText('Unesite vaše ime'), 'Test User');
+      await user.type(screen.getByPlaceholderText('vas@email.com'), 'test@test.com');
+      await user.type(screen.getByPlaceholderText('Kako vam možemo pomoći?'), 'Test message');
+      await user.click(screen.getByRole('checkbox'));
+      await user.click(screen.getByText('Pošaljite poruku'));
+
+      expect(mockFetch).toHaveBeenCalledWith(
+        'https://formspree.io/f/test123',
+        expect.objectContaining({ method: 'POST' }),
+      );
+      expect(screen.getByTestId('success-message')).toBeInTheDocument();
+    });
+
+    test('shows error message when Formspree returns non-ok response', async () => {
+      const mockFetch = vi.fn().mockResolvedValue({ ok: false } as Response);
+      vi.stubGlobal('fetch', mockFetch);
+
+      const user = userEvent.setup();
+      render(<ContactForm />);
+
+      await user.type(screen.getByPlaceholderText('Unesite vaše ime'), 'Test User');
+      await user.type(screen.getByPlaceholderText('vas@email.com'), 'test@test.com');
+      await user.type(screen.getByPlaceholderText('Kako vam možemo pomoći?'), 'Test message');
+      await user.click(screen.getByRole('checkbox'));
+      await user.click(screen.getByText('Pošaljite poruku'));
+
+      const alerts = screen.getAllByRole('alert');
+      expect(alerts.some((el) => el.textContent?.includes('info@its.ba'))).toBe(true);
+      expect(screen.queryByTestId('success-message')).not.toBeInTheDocument();
+    });
   });
 });

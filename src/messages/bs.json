@@ -448,6 +448,8 @@
       "messagePlaceholder": "Kako vam možemo pomoći?",
       "privacy": "Slažem se da iT Systems može kontaktirati povodom mog upita u skladu sa Politikom privatnosti.",
       "submit": "Pošaljite poruku",
+      "submitting": "Slanje...",
+      "submitError": "Greška pri slanju. Molimo pokušajte ponovo ili nas kontaktirajte na info@its.ba.",
       "recaptcha": "Ovaj sajt je zaštićen reCAPTCHA v3 sistemom.",
       "validationRequired": "Ovo polje je obavezno.",
       "validationEmail": "Unesite validnu email adresu."

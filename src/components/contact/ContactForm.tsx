@@ -5,9 +5,16 @@ import { useTranslations } from 'next-intl';
 import { Icon } from '@iconify/react';
 import { Button } from '@/components/ui/Button';
 
+const getFormspreeEndpoint = (): string | null => {
+  const id = process.env.NEXT_PUBLIC_FORMSPREE_ID;
+  return id ? `https://formspree.io/f/${id}` : null;
+};
+
 export function ContactForm() {
   const t = useTranslations('Contact');
   const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState(false);
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [formData, setFormData] = useState({
     name: '',
@@ -26,16 +33,46 @@ export function ContactForm() {
     } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
       newErrors.email = t('form.validationEmail');
     }
+    if (!formData.message.trim()) newErrors.message = t('form.validationRequired');
     if (!formData.privacy) newErrors.privacy = t('form.validationRequired');
     return newErrors;
   };
 
-  const handleSubmit = (e: FormEvent) => {
+  const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
     const newErrors = validate();
     setErrors(newErrors);
-    if (Object.keys(newErrors).length === 0) {
+    if (Object.keys(newErrors).length > 0) return;
+
+    const FORMSPREE_ENDPOINT = getFormspreeEndpoint();
+    if (!FORMSPREE_ENDPOINT) {
       setSubmitted(true);
+      return;
+    }
+
+    setSubmitting(true);
+    setSubmitError(false);
+    try {
+      const res = await fetch(FORMSPREE_ENDPOINT, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          subject: formData.subject,
+          message: formData.message,
+        }),
+      });
+      if (res.ok) {
+        setSubmitted(true);
+      } else {
+        setSubmitError(true);
+      }
+    } catch {
+      setSubmitError(true);
+    } finally {
+      setSubmitting(false);
     }
   };
 
@@ -141,6 +178,9 @@ export function ContactForm() {
           className={`${inputClasses} resize-none`}
           placeholder={t('form.messagePlaceholder')}
         />
+        {errors.message && (
+          <p className="text-xs text-red-400 mt-1" role="alert">{errors.message}</p>
+        )}
       </div>
       <label className="flex items-start gap-3 cursor-pointer group">
         <div className="relative flex items-center justify-center mt-0.5">
@@ -165,8 +205,11 @@ export function ContactForm() {
       {errors.privacy && (
         <p className="text-xs text-red-400 -mt-4" role="alert">{errors.privacy}</p>
       )}
-      <Button type="submit" className="w-full sm:w-auto px-8">
-        {t('form.submit')}
+      {submitError && (
+        <p className="text-sm text-red-400" role="alert">{t('form.submitError')}</p>
+      )}
+      <Button type="submit" disabled={submitting} className="w-full sm:w-auto px-8">
+        {submitting ? t('form.submitting') : t('form.submit')}
       </Button>
     </form>
   );
