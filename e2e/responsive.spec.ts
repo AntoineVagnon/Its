@@ -24,11 +24,22 @@ test.describe('Responsive', () => {
   test('[mobile 375px] no horizontal overflow on any page', async ({ page }) => {
     await page.setViewportSize({ width: 375, height: 812 });
 
-    for (const url of ['/bs/', '/bs/proizvodi/geodet/', '/bs/kontakt/']) {
+    const urls = [
+      '/bs/',
+      '/bs/kontakt/',
+      '/bs/proizvodi/geodet/',
+      '/bs/proizvodi/geodet-profili/',
+      '/bs/proizvodi/proman/',
+      '/bs/proizvodi/dkv-pro/',
+      '/bs/proizvodi/ervip/',
+      '/bs/proizvodi/help-desk/',
+    ];
+
+    for (const url of urls) {
       await page.goto(url);
       const scrollWidth = await page.evaluate(() => document.documentElement.scrollWidth);
       const clientWidth = await page.evaluate(() => document.documentElement.clientWidth);
-      expect(scrollWidth).toBeLessThanOrEqual(clientWidth + 1);
+      expect(scrollWidth, `${url} has horizontal overflow`).toBeLessThanOrEqual(clientWidth + 1);
     }
   });
 

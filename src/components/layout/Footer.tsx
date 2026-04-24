@@ -92,7 +92,7 @@ export function Footer() {
             <p className="text-sm font-light text-gray-400 mb-4">
               {t('newsletterText')}
             </p>
-            <form className="flex gap-2">
+            <form className="flex gap-2" onSubmit={(e) => e.preventDefault()}>
               <input
                 type="email"
                 placeholder={t('newsletterPlaceholder')}

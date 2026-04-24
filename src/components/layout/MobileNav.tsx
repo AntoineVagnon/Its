@@ -3,6 +3,7 @@
 import { AnimatePresence, motion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
 import { NAV_ITEMS } from '@/lib/constants';
+import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/Button';
 import { LanguageToggle } from './LanguageToggle';
 
@@ -10,9 +11,10 @@ interface MobileNavProps {
   isOpen: boolean;
   onClose: () => void;
   locale: string;
+  activeKey?: string | null;
 }
 
-export function MobileNav({ isOpen, onClose, locale }: MobileNavProps) {
+export function MobileNav({ isOpen, onClose, locale, activeKey }: MobileNavProps) {
   const t = useTranslations('Header');
 
   return (
@@ -32,7 +34,12 @@ export function MobileNav({ isOpen, onClose, locale }: MobileNavProps) {
                 key={item.key}
                 href={`/${locale}${item.href}`}
                 onClick={onClose}
-                className="block text-sm font-medium text-white py-2"
+                className={cn(
+                  'block text-sm py-2',
+                  activeKey === item.key
+                    ? 'font-semibold text-its-accent'
+                    : 'font-medium text-white'
+                )}
               >
                 {t(`nav.${item.key}`)}
               </a>

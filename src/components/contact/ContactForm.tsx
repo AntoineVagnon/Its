@@ -100,10 +100,11 @@ export function ContactForm() {
     <form onSubmit={handleSubmit} className="space-y-6" noValidate>
       <div className="grid sm:grid-cols-2 gap-6">
         <div>
-          <label className="block text-xs font-medium text-gray-300 mb-2 uppercase tracking-wide">
+          <label htmlFor="cf-name" className="block text-xs font-medium text-gray-300 mb-2 uppercase tracking-wide">
             {t('form.name')}
           </label>
           <input
+            id="cf-name"
             type="text"
             value={formData.name}
             onChange={(e) => setFormData({ ...formData, name: e.target.value })}
@@ -115,10 +116,11 @@ export function ContactForm() {
           )}
         </div>
         <div>
-          <label className="block text-xs font-medium text-gray-300 mb-2 uppercase tracking-wide">
+          <label htmlFor="cf-email" className="block text-xs font-medium text-gray-300 mb-2 uppercase tracking-wide">
             {t('form.email')}
           </label>
           <input
+            id="cf-email"
             type="email"
             value={formData.email}
             onChange={(e) => setFormData({ ...formData, email: e.target.value })}
@@ -132,10 +134,11 @@ export function ContactForm() {
       </div>
       <div className="grid sm:grid-cols-2 gap-6">
         <div>
-          <label className="block text-xs font-medium text-gray-300 mb-2 uppercase tracking-wide">
+          <label htmlFor="cf-phone" className="block text-xs font-medium text-gray-300 mb-2 uppercase tracking-wide">
             {t('form.phone')}
           </label>
           <input
+            id="cf-phone"
             type="text"
             value={formData.phone}
             onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
@@ -144,11 +147,12 @@ export function ContactForm() {
           />
         </div>
         <div>
-          <label className="block text-xs font-medium text-gray-300 mb-2 uppercase tracking-wide">
+          <label htmlFor="cf-subject" className="block text-xs font-medium text-gray-300 mb-2 uppercase tracking-wide">
             {t('form.subject')}
           </label>
           <div className="relative">
             <select
+              id="cf-subject"
               value={formData.subject}
               onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
               className={`${inputClasses} appearance-none`}
@@ -168,10 +172,11 @@ export function ContactForm() {
         </div>
       </div>
       <div>
-        <label className="block text-xs font-medium text-gray-300 mb-2 uppercase tracking-wide">
+        <label htmlFor="cf-message" className="block text-xs font-medium text-gray-300 mb-2 uppercase tracking-wide">
           {t('form.message')}
         </label>
         <textarea
+          id="cf-message"
           rows={4}
           value={formData.message}
           onChange={(e) => setFormData({ ...formData, message: e.target.value })}

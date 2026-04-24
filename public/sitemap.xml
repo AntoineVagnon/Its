@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- Homepage -->
+  <url>
+    <loc>https://its.ba/bs/</loc>
+    <xhtml:link rel="alternate" hreflang="bs" href="https://its.ba/bs/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://its.ba/en/"/>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://its.ba/en/</loc>
+    <xhtml:link rel="alternate" hreflang="bs" href="https://its.ba/bs/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://its.ba/en/"/>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Contact -->
+  <url>
+    <loc>https://its.ba/bs/kontakt/</loc>
+    <xhtml:link rel="alternate" hreflang="bs" href="https://its.ba/bs/kontakt/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://its.ba/en/kontakt/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://its.ba/en/kontakt/</loc>
+    <xhtml:link rel="alternate" hreflang="bs" href="https://its.ba/bs/kontakt/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://its.ba/en/kontakt/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Product: Geodet -->
+  <url>
+    <loc>https://its.ba/bs/proizvodi/geodet/</loc>
+    <xhtml:link rel="alternate" hreflang="bs" href="https://its.ba/bs/proizvodi/geodet/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://its.ba/en/proizvodi/geodet/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://its.ba/en/proizvodi/geodet/</loc>
+    <xhtml:link rel="alternate" hreflang="bs" href="https://its.ba/bs/proizvodi/geodet/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://its.ba/en/proizvodi/geodet/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Product: Geodet Profili -->
+  <url>
+    <loc>https://its.ba/bs/proizvodi/geodet-profili/</loc>
+    <xhtml:link rel="alternate" hreflang="bs" href="https://its.ba/bs/proizvodi/geodet-profili/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://its.ba/en/proizvodi/geodet-profili/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://its.ba/en/proizvodi/geodet-profili/</loc>
+    <xhtml:link rel="alternate" hreflang="bs" href="https://its.ba/bs/proizvodi/geodet-profili/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://its.ba/en/proizvodi/geodet-profili/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Product: ProMan -->
+  <url>
+    <loc>https://its.ba/bs/proizvodi/proman/</loc>
+    <xhtml:link rel="alternate" hreflang="bs" href="https://its.ba/bs/proizvodi/proman/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://its.ba/en/proizvodi/proman/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://its.ba/en/proizvodi/proman/</loc>
+    <xhtml:link rel="alternate" hreflang="bs" href="https://its.ba/bs/proizvodi/proman/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://its.ba/en/proizvodi/proman/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Product: DKV-PRO -->
+  <url>
+    <loc>https://its.ba/bs/proizvodi/dkv-pro/</loc>
+    <xhtml:link rel="alternate" hreflang="bs" href="https://its.ba/bs/proizvodi/dkv-pro/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://its.ba/en/proizvodi/dkv-pro/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://its.ba/en/proizvodi/dkv-pro/</loc>
+    <xhtml:link rel="alternate" hreflang="bs" href="https://its.ba/bs/proizvodi/dkv-pro/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://its.ba/en/proizvodi/dkv-pro/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Product: ERVIP -->
+  <url>
+    <loc>https://its.ba/bs/proizvodi/ervip/</loc>
+    <xhtml:link rel="alternate" hreflang="bs" href="https://its.ba/bs/proizvodi/ervip/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://its.ba/en/proizvodi/ervip/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://its.ba/en/proizvodi/ervip/</loc>
+    <xhtml:link rel="alternate" hreflang="bs" href="https://its.ba/bs/proizvodi/ervip/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://its.ba/en/proizvodi/ervip/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Product: Help Desk -->
+  <url>
+    <loc>https://its.ba/bs/proizvodi/help-desk/</loc>
+    <xhtml:link rel="alternate" hreflang="bs" href="https://its.ba/bs/proizvodi/help-desk/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://its.ba/en/proizvodi/help-desk/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://its.ba/en/proizvodi/help-desk/</loc>
+    <xhtml:link rel="alternate" hreflang="bs" href="https://its.ba/bs/proizvodi/help-desk/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://its.ba/en/proizvodi/help-desk/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+</urlset>

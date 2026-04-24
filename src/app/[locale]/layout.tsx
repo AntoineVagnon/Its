@@ -32,11 +32,26 @@ export async function generateMetadata({
   return {
     title,
     description,
+    metadataBase: new URL('https://its.ba'),
     alternates: {
+      canonical: `/${locale}/`,
       languages: {
         bs: '/bs/',
         en: '/en/',
       },
+    },
+    openGraph: {
+      title,
+      description,
+      type: 'website',
+      siteName: 'iT Systems',
+      locale: locale === 'bs' ? 'bs_BA' : 'en_US',
+      url: `/${locale}/`,
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title,
+      description,
     },
   };
 }

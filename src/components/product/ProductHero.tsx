@@ -35,7 +35,9 @@ export function ProductHero({ namespace = 'Geodet' }: ProductHeroProps) {
             {t('breadcrumb.products')}
           </a>
           <span>/</span>
-          <span className="text-its-accent">{t('breadcrumb.category')}</span>
+          <span>{t('breadcrumb.category')}</span>
+          <span>/</span>
+          <span className="text-its-accent">{t('breadcrumb.current')}</span>
         </div>
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>

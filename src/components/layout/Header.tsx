@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { useTranslations, useLocale } from 'next-intl';
+import { usePathname } from 'next/navigation';
 import { Icon } from '@iconify/react';
 import { NAV_ITEMS } from '@/lib/constants';
 import { cn } from '@/lib/utils';
@@ -9,9 +10,18 @@ import { Button } from '@/components/ui/Button';
 import { LanguageToggle } from './LanguageToggle';
 import { MobileNav } from './MobileNav';
 
+function getActiveKey(pathname: string, locale: string): string | null {
+  if (pathname === `/${locale}` || pathname === `/${locale}/`) return 'home';
+  if (pathname.startsWith(`/${locale}/proizvodi`)) return 'products';
+  if (pathname.startsWith(`/${locale}/kontakt`)) return 'contact';
+  return null;
+}
+
 export function Header() {
   const t = useTranslations('Header');
   const locale = useLocale();
+  const pathname = usePathname();
+  const activeKey = getActiveKey(pathname, locale);
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
 
@@ -41,14 +51,14 @@ export function Header() {
               {t('logo')}
             </a>
             <div className="hidden md:flex items-center gap-8">
-              {NAV_ITEMS.map((item, i) => (
+              {NAV_ITEMS.map((item) => (
                 <a
                   key={item.key}
                   href={`/${locale}${item.href}`}
                   className={cn(
-                    'text-sm transition-colors',
-                    i === 0
-                      ? 'font-medium text-white'
+                    'relative text-sm transition-colors pb-1',
+                    activeKey === item.key
+                      ? 'font-medium text-white after:absolute after:bottom-0 after:left-0 after:right-0 after:h-px after:bg-its-accent'
                       : 'font-normal text-gray-400 hover:text-white'
                   )}
                 >
@@ -73,7 +83,7 @@ export function Header() {
           </button>
         </div>
       </nav>
-      <MobileNav isOpen={mobileOpen} onClose={() => setMobileOpen(false)} locale={locale} />
+      <MobileNav isOpen={mobileOpen} onClose={() => setMobileOpen(false)} locale={locale} activeKey={activeKey} />
     </>
   );
 }

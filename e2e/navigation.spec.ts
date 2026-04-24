@@ -49,4 +49,34 @@ test.describe('Navigation', () => {
     await page.click('a:has-text("Početna")');
     await expect(page).toHaveURL(/\/bs\//);
   });
+
+  test('Geodet page renders FeatureBlocks section', async ({ page }) => {
+    await page.goto('/bs/proizvodi/geodet/');
+    await expect(page.getByText('Transformacija koordinata u sekundi')).toBeVisible();
+  });
+
+  test('Geodet page renders RelatedProducts section', async ({ page }) => {
+    await page.goto('/bs/proizvodi/geodet/');
+    await expect(page.getByText('Srodni proizvodi')).toBeVisible();
+    await expect(page.getByText('Geodet Profili')).toBeVisible();
+  });
+
+  test('ProMan product page loads and renders feature blocks', async ({ page }) => {
+    await page.goto('/bs/proizvodi/proman/');
+    await expect(page.locator('h1')).toContainText('ProMan');
+    await expect(page.getByText('Svaki dokument na pravom mjestu')).toBeVisible();
+  });
+
+  test('DKV-PRO product page loads in English', async ({ page }) => {
+    await page.goto('/en/proizvodi/dkv-pro/');
+    await expect(page.locator('h1')).toContainText('DKV-PRO');
+    await expect(page.getByText('Calculations to domestic and EU standards')).toBeVisible();
+  });
+
+  test('related product card on Geodet page navigates to Geodet Profili', async ({ page }) => {
+    await page.goto('/bs/proizvodi/geodet/');
+    await page.click('a[href="/bs/proizvodi/geodet-profili/"]');
+    await expect(page).toHaveURL(/\/bs\/proizvodi\/geodet-profili/);
+    await expect(page.locator('h1')).toContainText('Geodet Profili');
+  });
 });

@@ -3,13 +3,16 @@ import { render, screen } from '@testing-library/react';
 import { ProductHero } from '../ProductHero';
 
 describe('ProductHero', () => {
-  test('renders breadcrumb (Početna > Proizvodi > Geodezija)', () => {
+  test('renders full breadcrumb trail (Početna / Proizvodi / Geodezija / Geodet)', () => {
     render(<ProductHero />);
     expect(screen.getByText('Početna')).toBeInTheDocument();
     expect(screen.getByText('Proizvodi')).toBeInTheDocument();
     // "Geodezija" appears in both breadcrumb and category pill
     const geodezija = screen.getAllByText('Geodezija');
     expect(geodezija.length).toBeGreaterThanOrEqual(1);
+    // Current product name appears as the last breadcrumb item
+    const geodet = screen.getAllByText('Geodet');
+    expect(geodet.length).toBeGreaterThanOrEqual(1);
   });
 
   test('renders "Geodet" heading', () => {

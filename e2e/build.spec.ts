@@ -4,28 +4,30 @@ import path from 'path';
 
 const outDir = path.resolve(__dirname, '../out');
 
+const LOCALES = ['bs', 'en'] as const;
+const PRODUCT_PAGES = [
+  'geodet',
+  'geodet-profili',
+  'proman',
+  'dkv-pro',
+  'ervip',
+  'help-desk',
+] as const;
+
 test.describe('Static Build Output', () => {
-  test('out/bs/index.html exists', () => {
-    expect(fs.existsSync(path.join(outDir, 'bs/index.html'))).toBe(true);
-  });
+  for (const locale of LOCALES) {
+    test(`out/${locale}/index.html exists`, () => {
+      expect(fs.existsSync(path.join(outDir, `${locale}/index.html`))).toBe(true);
+    });
 
-  test('out/en/index.html exists', () => {
-    expect(fs.existsSync(path.join(outDir, 'en/index.html'))).toBe(true);
-  });
+    test(`out/${locale}/kontakt/index.html exists`, () => {
+      expect(fs.existsSync(path.join(outDir, `${locale}/kontakt/index.html`))).toBe(true);
+    });
 
-  test('out/bs/proizvodi/geodet/index.html exists', () => {
-    expect(fs.existsSync(path.join(outDir, 'bs/proizvodi/geodet/index.html'))).toBe(true);
-  });
-
-  test('out/bs/kontakt/index.html exists', () => {
-    expect(fs.existsSync(path.join(outDir, 'bs/kontakt/index.html'))).toBe(true);
-  });
-
-  test('out/en/proizvodi/geodet/index.html exists', () => {
-    expect(fs.existsSync(path.join(outDir, 'en/proizvodi/geodet/index.html'))).toBe(true);
-  });
-
-  test('out/en/kontakt/index.html exists', () => {
-    expect(fs.existsSync(path.join(outDir, 'en/kontakt/index.html'))).toBe(true);
-  });
+    for (const product of PRODUCT_PAGES) {
+      test(`out/${locale}/proizvodi/${product}/index.html exists`, () => {
+        expect(fs.existsSync(path.join(outDir, `${locale}/proizvodi/${product}/index.html`))).toBe(true);
+      });
+    }
+  }
 });

@@ -20,7 +20,12 @@
     "subtitle": "For over 10 years, we have been delivering reliable software solutions for public administration, geodesy, and the private sector across Bosnia and Herzegovina.",
     "ctaProducts": "View products",
     "ctaQuote": "Request a Quote",
-    "partnersLabel": "Certified partners"
+    "partnersLabel": "Certified partners",
+    "statsClients": "Clients",
+    "statsProducts": "Products",
+    "statsYears": "Years",
+    "statsSystemOnline": "System Online",
+    "statsUptime": "uptime"
   },
   "SocialProof": {
     "heading": "Used by 50+ organizations"
@@ -147,6 +152,59 @@
         }
       }
     },
+    "clients": {
+      "heading": "Trusted by"
+    },
+    "relatedProducts": {
+      "heading": "Related products",
+      "learnMore": "Learn more",
+      "items": {
+        "geodet-profili": {
+          "category": "Geodesy",
+          "title": "Geodet Profiles",
+          "description": "Visualization and drawing of geodetic terrain profiles with flexible data import."
+        },
+        "proman": {
+          "category": "Documents",
+          "title": "ProMan",
+          "description": "Electronic protocol and document management with a centralized archive."
+        },
+        "dkv-pro": {
+          "category": "Power Lines",
+          "title": "DKV-PRO",
+          "description": "Software package for power line design and electromechanical calculations."
+        }
+      }
+    },
+    "featureBlocks": {
+      "fb1": {
+        "heading": "Coordinate transformation in seconds",
+        "description": "Precise conversion between all relevant coordinate systems used in Bosnia and Herzegovina. Over 100 predefined datums available instantly.",
+        "points": {
+          "p1": "Support for WGS84, Gauss-Krüger, D-48, D-96, and UTM systems",
+          "p2": "Batch processing — transform thousands of points at once",
+          "p3": "Import from ASCII, CSV, and standard geodetic formats"
+        }
+      },
+      "fb2": {
+        "heading": "Automatic GPS report generation",
+        "description": "From raw GNSS measurements to professional reports in a few clicks. Data is automatically formatted to Federal Geodetic Administration standards.",
+        "points": {
+          "p1": "Direct import from Leica, Trimble, and Topcon GNSS receivers",
+          "p2": "Automatic calculation of coordinates, elevations, and measurement errors",
+          "p3": "Export to Excel format ready for client submission"
+        }
+      },
+      "fb3": {
+        "heading": "Direct integration with CAD tools",
+        "description": "Geodetic data immediately available in your CAD environment. No manual entry, no transfer errors — direct export to all popular formats.",
+        "points": {
+          "p1": "Support for AutoCAD, ZWCAD, BricsCAD, and MicroStation",
+          "p2": "Export to DXF, DWG, KML, SHP, PDF, and DGN formats",
+          "p3": "Google Earth visualization with one click"
+        }
+      }
+    },
     "ctaBanner": {
       "heading": "Ready to modernize your geodetic processes?",
       "cta": "Contact us"
@@ -199,6 +257,59 @@
           "f1": "Everything in Standard",
           "f2": "Geodet application integration",
           "f3": "DXF and PDF export modules"
+        }
+      }
+    },
+    "clients": {
+      "heading": "Trusted by"
+    },
+    "relatedProducts": {
+      "heading": "Related products",
+      "learnMore": "Learn more",
+      "items": {
+        "geodet": {
+          "category": "Geodesy",
+          "title": "Geodet",
+          "description": "Automatic processing of geodetic data and generation of standard forms."
+        },
+        "proman": {
+          "category": "Documents",
+          "title": "ProMan",
+          "description": "Electronic protocol and document management with a centralized archive."
+        },
+        "dkv-pro": {
+          "category": "Power Lines",
+          "title": "DKV-PRO",
+          "description": "Software package for power line design and electromechanical calculations."
+        }
+      }
+    },
+    "featureBlocks": {
+      "fb1": {
+        "heading": "Precise terrain visualization",
+        "description": "Generate professional longitudinal and cross-sectional terrain profiles directly from measured data. Automatic dimensioning and legend to geodetic industry standards.",
+        "points": {
+          "p1": "Longitudinal and cross profiles with automatic dimensioning",
+          "p2": "Configurable scales and dimensioning intervals",
+          "p3": "Real-time visual preview during data import"
+        }
+      },
+      "fb2": {
+        "heading": "Import from all geodetic sources",
+        "description": "Direct import from the Geodet application, ASCII files, and formatted Topcon and Leica instrument files — no manual transcription.",
+        "points": {
+          "p1": "Geodet application compatibility for direct point transfer",
+          "p2": "Support for ASCII, Topcon FC, and Leica GSI formats",
+          "p3": "Automatic format detection on import"
+        }
+      },
+      "fb3": {
+        "heading": "Export ready for submission",
+        "description": "Generated profiles immediately available in standard formats for archiving, further design, or client presentation.",
+        "points": {
+          "p1": "DXF export for AutoCAD and other CAD tools",
+          "p2": "PDF export with geodetic firm header and stamp",
+          "p3": "Excel tables with detailed tabular point listing"
         }
       }
     },
@@ -257,6 +368,59 @@
         }
       }
     },
+    "clients": {
+      "heading": "Trusted by"
+    },
+    "relatedProducts": {
+      "heading": "Related products",
+      "learnMore": "Learn more",
+      "items": {
+        "help-desk": {
+          "category": "Support",
+          "title": "Help Desk",
+          "description": "Online ticketing system for efficient technical support and customer care."
+        },
+        "ervip": {
+          "category": "Records",
+          "title": "ERVIP",
+          "description": "Complete solution for time tracking and access control."
+        },
+        "geodet": {
+          "category": "Geodesy",
+          "title": "Geodet",
+          "description": "Automatic processing of geodetic data and generation of standard forms."
+        }
+      }
+    },
+    "featureBlocks": {
+      "fb1": {
+        "heading": "Every document in the right place",
+        "description": "Automatic protocol registration with a unique number — from incoming letters to internal decisions. The end of paper-based records and manual transcription.",
+        "points": {
+          "p1": "Automatic protocol number on each document entry",
+          "p2": "Classification by type, date, officer, and status",
+          "p3": "Document flow tracking through all processing stages"
+        }
+      },
+      "fb2": {
+        "heading": "Digital archive with instant search",
+        "description": "Everything you have ever filed is available in seconds. Search by content, date, officer, or protocol number — without rifling through folders.",
+        "points": {
+          "p1": "Full-text search across all scanned document content",
+          "p2": "Filters by year, category, department, and status",
+          "p3": "Duplicate detection with automatic verification"
+        }
+      },
+      "fb3": {
+        "heading": "Processes that run without stopping",
+        "description": "Define who approves what and by when. Automatic notifications ensure no task is left unfinished.",
+        "points": {
+          "p1": "Visual workflow editor with roles and deadlines",
+          "p2": "Email and in-app notifications at each step",
+          "p3": "Status dashboard for all active processes in the team"
+        }
+      }
+    },
     "ctaBanner": {
       "heading": "Ready to digitize your document management?",
       "cta": "Contact us"
@@ -309,6 +473,59 @@
           "f1": "Everything in Standard",
           "f2": "Automatic documentation",
           "f3": "Multi-voltage levels (35–400 kV)"
+        }
+      }
+    },
+    "clients": {
+      "heading": "Trusted by"
+    },
+    "relatedProducts": {
+      "heading": "Related products",
+      "learnMore": "Learn more",
+      "items": {
+        "proman": {
+          "category": "Documents",
+          "title": "ProMan",
+          "description": "Electronic protocol and document management with a centralized archive."
+        },
+        "geodet": {
+          "category": "Geodesy",
+          "title": "Geodet",
+          "description": "Automatic processing of geodetic data and generation of standard forms."
+        },
+        "ervip": {
+          "category": "Records",
+          "title": "ERVIP",
+          "description": "Complete solution for time tracking and access control."
+        }
+      }
+    },
+    "featureBlocks": {
+      "fb1": {
+        "heading": "Calculations to domestic and EU standards",
+        "description": "Automatic electromechanical calculations of conductor mechanical stress, sag, and ground wire for all climatic cases per BAS and EN standards.",
+        "points": {
+          "p1": "Sag and stress calculations for all climatic cases (ice, wind, min. temp.)",
+          "p2": "Support for single and multi-strand conductors (Al, Cu, ACSR, OPGW)",
+          "p3": "Automatic compliance check against electrical regulations"
+        }
+      },
+      "fb2": {
+        "heading": "Route optimization in minutes",
+        "description": "Plot the route on the terrain, import topographic data, and visualize the profile with tower positions — all in one tool.",
+        "points": {
+          "p1": "Visual route profile with automatic tower positioning",
+          "p2": "Import of topographic data from ASCII and geodetic files",
+          "p3": "Automatic calculation of span lengths and tower heights"
+        }
+      },
+      "fb3": {
+        "heading": "Complete project documentation in one click",
+        "description": "From calculations to final project documentation without manual transcription. All tables, specifications, and drawings are generated automatically.",
+        "points": {
+          "p1": "Assembly tables and material specifications per project",
+          "p2": "Technical description and situational plan in PDF format",
+          "p3": "Support for projects from 35 kV to 400 kV"
         }
       }
     },
@@ -367,6 +584,59 @@
         }
       }
     },
+    "clients": {
+      "heading": "Trusted by"
+    },
+    "relatedProducts": {
+      "heading": "Related products",
+      "learnMore": "Learn more",
+      "items": {
+        "proman": {
+          "category": "Documents",
+          "title": "ProMan",
+          "description": "Electronic protocol and document management with a centralized archive."
+        },
+        "help-desk": {
+          "category": "Support",
+          "title": "Help Desk",
+          "description": "Online ticketing system for efficient technical support and customer care."
+        },
+        "dkv-pro": {
+          "category": "Power Lines",
+          "title": "DKV-PRO",
+          "description": "Software package for power line design and electromechanical calculations."
+        }
+      }
+    },
+    "featureBlocks": {
+      "fb1": {
+        "heading": "Paperless biometric attendance",
+        "description": "Employees clock in and out via fingerprint, card, or PIN. The system records everything automatically — you get precise data for payroll.",
+        "points": {
+          "p1": "Support for fingerprint, RFID card, and PIN identification",
+          "p2": "Instant identification and registration — no waiting",
+          "p3": "Online and offline operation (terminal stores data locally)"
+        }
+      },
+      "fb2": {
+        "heading": "Automatic calculation without errors",
+        "description": "The system automatically calculates regular hours, overtime, night shifts, and annual leave according to your internal rules and legal requirements.",
+        "points": {
+          "p1": "Shift definitions, work time schemes, and tolerance settings",
+          "p2": "Automatic overtime and on-call hour calculation",
+          "p3": "Export for payroll system in Excel and standard formats"
+        }
+      },
+      "fb3": {
+        "heading": "Zone-based access management",
+        "description": "Define who can access which areas and at what times. The system automatically blocks unauthorized access and maintains a complete passage history.",
+        "points": {
+          "p1": "Unlimited access zones and terminal points",
+          "p2": "Time-based access schedules per employee and group",
+          "p3": "Complete passage history for every terminal"
+        }
+      }
+    },
     "ctaBanner": {
       "heading": "Ready to automate your time tracking?",
       "cta": "Contact us"
@@ -419,6 +689,59 @@
           "f1": "Everything in Standard",
           "f2": "Unlimited agents",
           "f3": "SLA management and customer portal"
+        }
+      }
+    },
+    "clients": {
+      "heading": "Trusted by"
+    },
+    "relatedProducts": {
+      "heading": "Related products",
+      "learnMore": "Learn more",
+      "items": {
+        "proman": {
+          "category": "Documents",
+          "title": "ProMan",
+          "description": "Electronic protocol and document management with a centralized archive."
+        },
+        "ervip": {
+          "category": "Records",
+          "title": "ERVIP",
+          "description": "Complete solution for time tracking and access control."
+        },
+        "geodet": {
+          "category": "Geodesy",
+          "title": "Geodet",
+          "description": "Automatic processing of geodetic data and generation of standard forms."
+        }
+      }
+    },
+    "featureBlocks": {
+      "fb1": {
+        "heading": "All requests in one place",
+        "description": "Every user request becomes a ticket with a priority, deadline, and assigned agent. Nothing is forgotten, everything is visible and measurable.",
+        "points": {
+          "p1": "Automatic ticket creation from email, web, and phone",
+          "p2": "Categories, tags, and priorities for quick sorting",
+          "p3": "Full communication history with each user on one screen"
+        }
+      },
+      "fb2": {
+        "heading": "SLA that tracks itself",
+        "description": "Define response and resolution deadlines by request type. The system monitors compliance and automatically escalates overdue tickets.",
+        "points": {
+          "p1": "SLA policy definition by ticket category and priority",
+          "p2": "Automatic escalation to agent or manager when deadline is exceeded",
+          "p3": "SLA compliance reports by agent and team"
+        }
+      },
+      "fb3": {
+        "heading": "Users find answers themselves",
+        "description": "A knowledge base reduces ticket volume and eases the burden on your support team. Users find solutions on their own, 24/7, without waiting for an agent.",
+        "points": {
+          "p1": "User-facing portal with a searchable knowledge base",
+          "p2": "FAQ section with the most common questions per product",
+          "p3": "Own ticket status tracking without contacting an agent"
         }
       }
     },

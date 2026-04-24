@@ -1,5 +1,6 @@
 import { setRequestLocale, getTranslations } from 'next-intl/server';
 import type { Metadata } from 'next';
+import { productMetadata } from '@/lib/metadata';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
 import { ContactForm } from '@/components/contact/ContactForm';
@@ -13,10 +14,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'Contact' });
-  return {
-    title: `${t('heading')} | iT Systems`,
-    description: t('subtitle'),
-  };
+  return productMetadata({ locale, title: t('heading'), description: t('subtitle'), path: '/kontakt/' });
 }
 
 export default async function ContactPage({

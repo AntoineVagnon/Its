@@ -62,15 +62,15 @@ export function Hero() {
                 <div className="grid grid-cols-3 gap-4 mb-6">
                   <div className="bg-its-accent/10 rounded-xl p-4 border border-its-accent/20">
                     <div className="text-2xl font-bold text-its-accent">50+</div>
-                    <div className="text-xs text-gray-500 mt-1">Clients</div>
+                    <div className="text-xs text-gray-500 mt-1">{t('statsClients')}</div>
                   </div>
                   <div className="bg-white/5 rounded-xl p-4 border border-white/10">
                     <div className="text-2xl font-bold text-white">7</div>
-                    <div className="text-xs text-gray-500 mt-1">Products</div>
+                    <div className="text-xs text-gray-500 mt-1">{t('statsProducts')}</div>
                   </div>
                   <div className="bg-white/5 rounded-xl p-4 border border-white/10">
                     <div className="text-2xl font-bold text-white">10+</div>
-                    <div className="text-xs text-gray-500 mt-1">Years</div>
+                    <div className="text-xs text-gray-500 mt-1">{t('statsYears')}</div>
                   </div>
                 </div>
                 {/* Bar chart mockup */}
@@ -95,8 +95,8 @@ export function Hero() {
                   <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 8l3 3 5-5" stroke="#22C55E" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
                 </div>
                 <div>
-                  <div className="text-xs font-medium text-white">System Online</div>
-                  <div className="text-[10px] text-gray-500">99.9% uptime</div>
+                  <div className="text-xs font-medium text-white">{t('statsSystemOnline')}</div>
+                  <div className="text-[10px] text-gray-500">99.9% {t('statsUptime')}</div>
                 </div>
               </div>
             </div>

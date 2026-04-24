@@ -20,7 +20,12 @@
     "subtitle": "Više od 10 godina isporučujemo pouzdana softverska rješenja za javnu upravu, geodeziju i privatni sektor širom Bosne i Hercegovine.",
     "ctaProducts": "Pogledajte proizvode",
     "ctaQuote": "Zatražite ponudu",
-    "partnersLabel": "Certificirani partneri"
+    "partnersLabel": "Certificirani partneri",
+    "statsClients": "Klijenata",
+    "statsProducts": "Proizvoda",
+    "statsYears": "Godina",
+    "statsSystemOnline": "Sistem aktivan",
+    "statsUptime": "dostupnost"
   },
   "SocialProof": {
     "heading": "Koriste nas 50+ organizacija"
@@ -147,6 +152,59 @@
         }
       }
     },
+    "clients": {
+      "heading": "Koriste Geodet"
+    },
+    "relatedProducts": {
+      "heading": "Srodni proizvodi",
+      "learnMore": "Saznajte više",
+      "items": {
+        "geodet-profili": {
+          "category": "Geodezija",
+          "title": "Geodet Profili",
+          "description": "Vizualizacija i iscrtavanje geodetskih profila terena sa fleksibilnim importom podataka."
+        },
+        "proman": {
+          "category": "Dokumenti",
+          "title": "ProMan",
+          "description": "Elektronski protokol i upravljanje dokumentima sa centralnim arhivom."
+        },
+        "dkv-pro": {
+          "category": "Dalekovodi",
+          "title": "DKV-PRO",
+          "description": "Softverski paket za projektovanje dalekovoda i elektromehanske proračune."
+        }
+      }
+    },
+    "featureBlocks": {
+      "fb1": {
+        "heading": "Transformacija koordinata u sekundi",
+        "description": "Precizna konverzija između svih relevantnih koordinatnih sistema koji se koriste u Bosni i Hercegovini. Više od 100 predefinisanih datuma dostupno odmah.",
+        "points": {
+          "p1": "Podrška za WGS84, Gauss-Krüger, D-48, D-96 i UTM sisteme",
+          "p2": "Batch obrada — transformišite hiljade tačaka odjednom",
+          "p3": "Uvoz iz ASCII, CSV i standardnih geodetskih formata"
+        }
+      },
+      "fb2": {
+        "heading": "Automatsko generisanje GPS izvještaja",
+        "description": "Iz sirovih GNSS mjerenja do profesionalnih izvještaja u nekoliko klikova. Podaci se automatski formatiraju prema standardima Federalne geodetske uprave.",
+        "points": {
+          "p1": "Direktan uvoz iz GNSS prijemnika Leica, Trimble i Topcon",
+          "p2": "Automatski izračun koordinata, visina i grešaka mjerenja",
+          "p3": "Eksport u Excel format spreman za predaju naručiocu"
+        }
+      },
+      "fb3": {
+        "heading": "Direktna integracija sa CAD alatima",
+        "description": "Geodetski podaci odmah dostupni u vašem CAD okruženju. Bez ručnog unosa, bez grešaka pri prenosu — direktan eksport u sve popularne formate.",
+        "points": {
+          "p1": "Podrška za AutoCAD, ZWCAD, BricsCAD i MicroStation",
+          "p2": "Eksport u DXF, DWG, KML, SHP, PDF i DGN formate",
+          "p3": "Vizualizacija u Google Earth uz jedan klik"
+        }
+      }
+    },
     "ctaBanner": {
       "heading": "Spremni da modernizirate vaše geodetske procese?",
       "cta": "Kontaktirajte nas"
@@ -199,6 +257,59 @@
           "f1": "Sve iz Standard paketa",
           "f2": "Integracija sa Geodet aplikacijom",
           "f3": "DXF i PDF eksport moduli"
+        }
+      }
+    },
+    "clients": {
+      "heading": "Koriste Geodet Profili"
+    },
+    "relatedProducts": {
+      "heading": "Srodni proizvodi",
+      "learnMore": "Saznajte više",
+      "items": {
+        "geodet": {
+          "category": "Geodezija",
+          "title": "Geodet",
+          "description": "Automatska obrada geodetskih podataka i generisanje standardnih obrazaca."
+        },
+        "proman": {
+          "category": "Dokumenti",
+          "title": "ProMan",
+          "description": "Elektronski protokol i upravljanje dokumentima sa centralnim arhivom."
+        },
+        "dkv-pro": {
+          "category": "Dalekovodi",
+          "title": "DKV-PRO",
+          "description": "Softverski paket za projektovanje dalekovoda i elektromehanske proračune."
+        }
+      }
+    },
+    "featureBlocks": {
+      "fb1": {
+        "heading": "Precizna vizualizacija terena",
+        "description": "Generišite profesionalne uzdužne i poprečne profile terena direktno iz izmjerenih podataka. Automatsko kotiranje i legenda po standardima geodetske struke.",
+        "points": {
+          "p1": "Uzdužni i poprečni profili sa automatskim dimenzionisanjem",
+          "p2": "Podesivi razmjeri i intervali kotiranja",
+          "p3": "Vizualni prikaz u realnom vremenu tokom uvoza podataka"
+        }
+      },
+      "fb2": {
+        "heading": "Uvoz iz svih geodetskih izvora",
+        "description": "Direktan uvoz podataka iz Geodet aplikacije, ASCII fajlova i formatiranih fajlova Topcon i Leica instrumenata — bez ručnog prepisivanja.",
+        "points": {
+          "p1": "Kompatibilnost sa Geodet aplikacijom za direktan prenos tačaka",
+          "p2": "Podrška za ASCII, Topcon FC i Leica GSI formate",
+          "p3": "Automatska detekcija formata pri uvoz"
+        }
+      },
+      "fb3": {
+        "heading": "Eksport spreman za predaju",
+        "description": "Generirani profili odmah dostupni u standardnim formatima za arhiviranje, dalje projektovanje ili prezentaciju naručiocu.",
+        "points": {
+          "p1": "DXF eksport za AutoCAD i ostale CAD alate",
+          "p2": "PDF eksport sa zaglavljem i pečatom geodetske firme",
+          "p3": "Excel tabele sa detaljnim tabelarnim prikazom tačaka"
         }
       }
     },
@@ -257,6 +368,59 @@
         }
       }
     },
+    "clients": {
+      "heading": "Koriste ProMan"
+    },
+    "relatedProducts": {
+      "heading": "Srodni proizvodi",
+      "learnMore": "Saznajte više",
+      "items": {
+        "help-desk": {
+          "category": "Podrška",
+          "title": "Help Desk",
+          "description": "Online ticketing sistem za efikasnu tehničku podršku i brigu o korisnicima."
+        },
+        "ervip": {
+          "category": "Evidencije",
+          "title": "ERVIP",
+          "description": "Kompletno rješenje za evidenciju radnog vremena i kontrolu pristupa."
+        },
+        "geodet": {
+          "category": "Geodezija",
+          "title": "Geodet",
+          "description": "Automatska obrada geodetskih podataka i generisanje standardnih obrazaca."
+        }
+      }
+    },
+    "featureBlocks": {
+      "fb1": {
+        "heading": "Svaki dokument na pravom mjestu",
+        "description": "Automatsko zavođenje u protokol sa jedinstvenim brojem — od dolaznih dopisa do internih rješenja. Kraj papirnoj evidenciji i ručnom prepisivanju.",
+        "points": {
+          "p1": "Automatski protokolni broj pri svakom unosu dokumenta",
+          "p2": "Klasifikacija po tipu, datumu, referentu i statusu",
+          "p3": "Praćenje toka dokumenta kroz sve faze obrade"
+        }
+      },
+      "fb2": {
+        "heading": "Digitalna arhiva s trenutnom pretragom",
+        "description": "Sve što ste ikada zaveli dostupno u sekundi. Pretraga po sadržaju, datumu, referentu ili broju protokola — bez preturanja fascikli.",
+        "points": {
+          "p1": "Fulltext pretraga po sadržaju svih skeniranih dokumenata",
+          "p2": "Filtri po godini, kategoriji, odjeljenju i statusu",
+          "p3": "Brisanje dupliciranih dokumenata uz automatsku provjeru"
+        }
+      },
+      "fb3": {
+        "heading": "Procesi koji teku bez zaustavljanja",
+        "description": "Definišite ko šta odobrava i u kom roku. Automatske notifikacije osiguravaju da nijedan zadatak ne ostane nedovršen.",
+        "points": {
+          "p1": "Vizualni editor toka rada sa ulogama i rokovima",
+          "p2": "Email i in-app notifikacije pri svakom koraku",
+          "p3": "Dashboard statusa svih aktivnih procesa u timu"
+        }
+      }
+    },
     "ctaBanner": {
       "heading": "Spremni da digitalizirate upravljanje dokumentima?",
       "cta": "Kontaktirajte nas"
@@ -309,6 +473,59 @@
           "f1": "Sve iz Standard paketa",
           "f2": "Automatska dokumentacija",
           "f3": "Multi-naponski nivoi (35–400 kV)"
+        }
+      }
+    },
+    "clients": {
+      "heading": "Koriste DKV-PRO"
+    },
+    "relatedProducts": {
+      "heading": "Srodni proizvodi",
+      "learnMore": "Saznajte više",
+      "items": {
+        "proman": {
+          "category": "Dokumenti",
+          "title": "ProMan",
+          "description": "Elektronski protokol i upravljanje dokumentima sa centralnim arhivom."
+        },
+        "geodet": {
+          "category": "Geodezija",
+          "title": "Geodet",
+          "description": "Automatska obrada geodetskih podataka i generisanje standardnih obrazaca."
+        },
+        "ervip": {
+          "category": "Evidencije",
+          "title": "ERVIP",
+          "description": "Kompletno rješenje za evidenciju radnog vremena i kontrolu pristupa."
+        }
+      }
+    },
+    "featureBlocks": {
+      "fb1": {
+        "heading": "Proračuni prema domaćim i EU standardima",
+        "description": "Automatski elektromehanički proračuni mehaničkog naprezanja vodiča, ugiba i zaštitnih užadi u svim klimatskim slučajevima prema BAS i EN standardima.",
+        "points": {
+          "p1": "Proračun ugiba i naprezanja za sve klimatske slučajeve (led, vjetar, min. temp.)",
+          "p2": "Podrška za jednožilne i višežilne vodiče (Al, Cu, ACSR, OPGW)",
+          "p3": "Automatska provjera usklađenosti s elektrotehničkim propisima"
+        }
+      },
+      "fb2": {
+        "heading": "Optimizacija trase u minutama",
+        "description": "Ucrtajte trasu na terenu, uvezite topografske podatke i vizualizirajte profil sa pozicijama stubova — sve u jednom alatu.",
+        "points": {
+          "p1": "Vizualni profil trase sa automatskim pozicioniranjem stubova",
+          "p2": "Uvoz topografskih podataka iz ASCII i geodetskih fajlova",
+          "p3": "Automatsko izračunavanje međustubnih raspona i visina stubova"
+        }
+      },
+      "fb3": {
+        "heading": "Kompletna projektna dokumentacija jednim klikom",
+        "description": "Iz proračuna do finalne projektne dokumentacije bez ručnog prepisa. Sve tabele, specifikacije i nacrti generišu se automatski.",
+        "points": {
+          "p1": "Montažne tabele i specifikacije materijala prema projektu",
+          "p2": "Tehnički opis i situacioni plan u PDF formatu",
+          "p3": "Podrška za projekte napona 35 kV do 400 kV"
         }
       }
     },
@@ -367,6 +584,59 @@
         }
       }
     },
+    "clients": {
+      "heading": "Koriste ERVIP"
+    },
+    "relatedProducts": {
+      "heading": "Srodni proizvodi",
+      "learnMore": "Saznajte više",
+      "items": {
+        "proman": {
+          "category": "Dokumenti",
+          "title": "ProMan",
+          "description": "Elektronski protokol i upravljanje dokumentima sa centralnim arhivom."
+        },
+        "help-desk": {
+          "category": "Podrška",
+          "title": "Help Desk",
+          "description": "Online ticketing sistem za efikasnu tehničku podršku i brigu o korisnicima."
+        },
+        "dkv-pro": {
+          "category": "Dalekovodi",
+          "title": "DKV-PRO",
+          "description": "Softverski paket za projektovanje dalekovoda i elektromehanske proračune."
+        }
+      }
+    },
+    "featureBlocks": {
+      "fb1": {
+        "heading": "Biometrijska evidencija bez papira",
+        "description": "Zaposlenici evidentiraju dolazak i odlazak otiskom prsta, karticom ili PIN kodom. Sistem sve bilježi automatski — vi dobijate precizne podatke za obračun.",
+        "points": {
+          "p1": "Podrška za otisak prsta, RFID karticu i PIN identifikaciju",
+          "p2": "Trenutna identifikacija i evidentiranje — bez čekanja",
+          "p3": "Rad u online i offline modu (terminal čuva podatke lokalno)"
+        }
+      },
+      "fb2": {
+        "heading": "Automatski obračun bez grešaka",
+        "description": "Sistem automatski računa redovne sate, prekovremeni rad, noćni rad i godišnje odmore prema vašim internim pravilnicima i zakonskim okvirima.",
+        "points": {
+          "p1": "Definisanje smjena, šema radnog vremena i tolerancija",
+          "p2": "Automatski obračun prekovremenih sati i dežurstava",
+          "p3": "Export za platni sistem u Excel i standardnim formatima"
+        }
+      },
+      "fb3": {
+        "heading": "Upravljanje pristupom po zonama",
+        "description": "Definišite ko ima pristup kojim prostorima i u koje vrijeme. Sistem automatski blokira neovlašteni pristup i čuva kompletnu historiju prolaza.",
+        "points": {
+          "p1": "Neograničen broj zona pristupa i terminalnih tačaka",
+          "p2": "Vremenski rasporedi pristupa po zaposleniku i grupi",
+          "p3": "Kompletna historija prolaza za svaki terminal"
+        }
+      }
+    },
     "ctaBanner": {
       "heading": "Spremni da automatizirate evidenciju radnog vremena?",
       "cta": "Kontaktirajte nas"
@@ -419,6 +689,59 @@
           "f1": "Sve iz Standard paketa",
           "f2": "Neograničen broj agenata",
           "f3": "SLA upravljanje i korisnički portal"
+        }
+      }
+    },
+    "clients": {
+      "heading": "Koriste Help Desk"
+    },
+    "relatedProducts": {
+      "heading": "Srodni proizvodi",
+      "learnMore": "Saznajte više",
+      "items": {
+        "proman": {
+          "category": "Dokumenti",
+          "title": "ProMan",
+          "description": "Elektronski protokol i upravljanje dokumentima sa centralnim arhivom."
+        },
+        "ervip": {
+          "category": "Evidencije",
+          "title": "ERVIP",
+          "description": "Kompletno rješenje za evidenciju radnog vremena i kontrolu pristupa."
+        },
+        "geodet": {
+          "category": "Geodezija",
+          "title": "Geodet",
+          "description": "Automatska obrada geodetskih podataka i generisanje standardnih obrazaca."
+        }
+      }
+    },
+    "featureBlocks": {
+      "fb1": {
+        "heading": "Sve reklamacije na jednom mjestu",
+        "description": "Svaki zahtjev korisnika postaje tiket sa prioritetom, rokom i dodijeljenim agentom. Ništa ne pada u zaborav, sve je vidljivo i mjerljivo.",
+        "points": {
+          "p1": "Automatsko kreiranje tiketa iz emaila, weba i telefona",
+          "p2": "Kategorije, tagovi i prioriteti za brzo sortiranje",
+          "p3": "Historija komunikacije sa svakim korisnikom na jednom ekranu"
+        }
+      },
+      "fb2": {
+        "heading": "SLA koji se sam prati",
+        "description": "Definišite rokove odgovora i rješavanja po tipu zahtjeva. Sistem prati poštovanje rokova i automatski eskalira tikete koji kasne.",
+        "points": {
+          "p1": "Definisanje SLA politika po kategoriji i prioritetu tiketa",
+          "p2": "Automatska eskalacija agentu ili menadžeru pri prekoračenju roka",
+          "p3": "Izvještaji o poštovanju SLA po agentu i timu"
+        }
+      },
+      "fb3": {
+        "heading": "Korisnici sami nalaze odgovore",
+        "description": "Baza znanja smanjuje broj tiketa i rasterećuje tim za podršku. Korisnici pronalaze rješenja sami, 24/7, bez čekanja na agenta.",
+        "points": {
+          "p1": "Interni portal za korisnike sa pretraživom bazom znanja",
+          "p2": "FAQ sekcija sa najčešćim pitanjima po proizvodu",
+          "p3": "Praćenje statusa vlastitih tiketa bez kontaktiranja agenta"
         }
       }
     },
