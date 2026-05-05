@@ -29,5 +29,10 @@ export default defineConfig({
     command: 'npm run dev',
     url: 'http://localhost:3000',
     reuseExistingServer: !process.env.CI,
+    env: {
+      // Fake ID so route mock in contact-form.spec.ts intercepts the fetch call.
+      // Real delivery requires NEXT_PUBLIC_FORMSPREE_ID set in Vercel (see TICK-005).
+      NEXT_PUBLIC_FORMSPREE_ID: 'test_fake_id_qa',
+    },
   },
 });
